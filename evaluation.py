@@ -38,8 +38,9 @@ def get_predictions(path):
     scores = []
     data = pd.read_csv(path, header=None).values.tolist()
     for row in data:
-        predicted_labels.append(row[0])
-        scores.append(row[1])
+        row = row[0].split(" ")
+        predicted_labels.append(int(row[0]))
+        scores.append([float(el) for el in row[1:]])
     return predicted_labels, scores
 
 
@@ -96,6 +97,8 @@ def compute_sentihood_aspect_macro_AUC(test_labels, scores):
         aspects_test_labels[i % 4].append(new_label)
         aspects_none_scores[i % 4].append(scores[i][0])
     aspect_AUC = []
+    print(aspects_test_labels[:3])
+    print(aspects_none_scores[:3])
     for i in range(4):
         aspect_AUC.append(metrics.roc_auc_score(aspects_test_labels[i], aspects_none_scores[i]))
     aspect_macro_AUC = np.mean(aspect_AUC)
