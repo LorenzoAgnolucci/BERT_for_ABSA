@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn import metrics
 import numpy as np
+import argparse
 
 
 sentihood_id2label = {0: "None", 1: "Positive", 2: "Negative"},
@@ -38,7 +39,6 @@ def get_predictions(path):
     scores = []
     data = pd.read_csv(path, header=None).values.tolist()
     for row in data:
-        row = row[0].split(" ")
         predicted_labels.append(int(row[0]))
         scores.append([float(el) for el in row[1:]])
     return predicted_labels, scores
@@ -97,8 +97,6 @@ def compute_sentihood_aspect_macro_AUC(test_labels, scores):
         aspects_test_labels[i % 4].append(new_label)
         aspects_none_scores[i % 4].append(scores[i][0])
     aspect_AUC = []
-    print(aspects_test_labels[:3])
-    print(aspects_none_scores[:3])
     for i in range(4):
         aspect_AUC.append(metrics.roc_auc_score(aspects_test_labels[i], aspects_none_scores[i]))
     aspect_macro_AUC = np.mean(aspect_AUC)
@@ -211,40 +209,62 @@ def compute_semeval_accuracy(test_labels, predicted_labels, scores, num_classes=
 
 
 if __name__ == '__main__':
-    # TODO: Think about changing datasets generation to make sentihood and semeval consistent. Before this consider
-    # TODO: all the differences (e.g. label2id)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--task",
+                        default="NLI_M",
+                        type=str,
+                        required=True,
+                        choices=["QA_M", "NLI_M", "QA_B", "NLI_B"],
+                        help="Name of the task to evaluate.")
+    parser.add_argument("--dataset_type",
+                        default="sentihood",
+                        type=str,
+                        required=True,
+                        choices=["sentihood", "semeval"],
+                        help="Dataset for the task")
+    parser.add_argument("--test_dataset_path",
+                        default="data/sentihood/BERT-pair/test_NLI_M.csv",
+                        type=str,
+                        required=True,
+                        help="Test dataset (csv format)")
+    parser.add_argument("--predictions_path",
+                        default="results/sentihood_NLI_M.csv",
+                        type=str,
+                        required=True,
+                        help="Predictions and scores path")
+    args = parser.parse_args()
 
-    # Sentihood
+    dataset = args.dataset_type
+    task = args.task
 
-    test_original_sentences, test_auxiliary_sentences, test_labels = sentihood_get_dataset("data/sentihood/BERT-pair/test_NLI_M.csv")
-    predicted_labels, scores = get_predictions("output_prediction.csv")
+    predicted_labels, scores = get_predictions(args.predictions_path)
 
-    sentihood_aspect_strict_acc = compute_sentihood_aspect_strict_accuracy(test_labels, predicted_labels)
-    print(f"Sentihood aspect strict accuracy: {sentihood_aspect_strict_acc}")
-    sentihood_aspect_macro_F1 = compute_sentihood_aspect_macro_F1(test_labels, predicted_labels)
-    print(f"Sentihood aspect macro F1: {sentihood_aspect_macro_F1}")
-    sentihood_aspect_macro_AUC = compute_sentihood_aspect_macro_AUC(test_labels, scores)
-    print(f"Sentihood aspect macro AUC: {sentihood_aspect_macro_AUC}")
+    if dataset == "sentihood":
+        test_original_sentences, test_auxiliary_sentences, test_labels = sentihood_get_dataset(args.test_dataset_path)
 
-    sentihood_sentiment_macro_AUC, sentihood_sentiment_accuracy = compute_sentihood_sentiment_classification_metrics(test_labels, scores)
-    print(f"Sentihood sentiment accuracy: {sentihood_sentiment_accuracy}")
-    print(f"Sentihood sentiment macro AUC: {sentihood_sentiment_macro_AUC}")
+        sentihood_aspect_strict_acc = compute_sentihood_aspect_strict_accuracy(test_labels, predicted_labels)
+        print(f"{task} Sentihood aspect strict accuracy: {sentihood_aspect_strict_acc}")
+        sentihood_aspect_macro_F1 = compute_sentihood_aspect_macro_F1(test_labels, predicted_labels)
+        print(f"{task} Sentihood aspect macro F1: {sentihood_aspect_macro_F1}")
+        sentihood_aspect_macro_AUC = compute_sentihood_aspect_macro_AUC(test_labels, scores)
+        print(f"{task} Sentihood aspect macro AUC: {sentihood_aspect_macro_AUC}")
 
-    # Semeval2014
+        sentihood_sentiment_macro_AUC, sentihood_sentiment_accuracy = compute_sentihood_sentiment_classification_metrics(test_labels, scores)
+        print(f"{task} Sentihood sentiment accuracy: {sentihood_sentiment_accuracy}")
+        print(f"{task} Sentihood sentiment macro AUC: {sentihood_sentiment_macro_AUC}")
 
-    test_original_sentences, test_auxiliary_sentences, test_labels = semeval_get_dataset(
-        "data/semeval2014/BERT-pair/test_NLI_M.csv")
-    predicted_labels, scores = get_predictions("output_prediction.csv")
+    elif dataset == "semeval":
+        test_original_sentences, test_auxiliary_sentences, test_labels = semeval_get_dataset(args.test_dataset_path)
 
-    semeval_aspect_precision, semeval_aspect_recall, semeval_aspect_micro_F1 = compute_semeval_PRF(test_labels,
-                                                                                                   predicted_labels)
-    print(f"Semeval aspect precision: {semeval_aspect_precision}")
-    print(f"Semeval aspect recall: {semeval_aspect_recall}")
-    print(f"Semeval aspect micro F1: {semeval_aspect_micro_F1}")
+        semeval_aspect_precision, semeval_aspect_recall, semeval_aspect_micro_F1 = compute_semeval_PRF(test_labels,
+                                                                                                       predicted_labels)
+        print(f"{task} Semeval aspect precision: {semeval_aspect_precision}")
+        print(f"{task} Semeval aspect recall: {semeval_aspect_recall}")
+        print(f"{task} Semeval aspect micro F1: {semeval_aspect_micro_F1}")
 
-    semeval_4_classes_accuracy = compute_semeval_accuracy(test_labels, predicted_labels, scores, 4)
-    semeval_3_classes_accuracy = compute_semeval_accuracy(test_labels, predicted_labels, scores, 3)
-    semeval_2_classes_accuracy = compute_semeval_accuracy(test_labels, predicted_labels, scores, 2)
-    print(f"Semeval 4-classes accuracy: {semeval_4_classes_accuracy}")
-    print(f"Semeval 3-classes accuracy: {semeval_3_classes_accuracy}")
-    print(f"Semeval 2-classes accuracy: {semeval_2_classes_accuracy}")
+        semeval_4_classes_accuracy = compute_semeval_accuracy(test_labels, predicted_labels, scores, 4)
+        semeval_3_classes_accuracy = compute_semeval_accuracy(test_labels, predicted_labels, scores, 3)
+        semeval_2_classes_accuracy = compute_semeval_accuracy(test_labels, predicted_labels, scores, 2)
+        print(f"{task} Semeval 4-classes accuracy: {semeval_4_classes_accuracy}")
+        print(f"{task} Semeval 3-classes accuracy: {semeval_3_classes_accuracy}")
+        print(f"{task} Semeval 2-classes accuracy: {semeval_2_classes_accuracy}")
