@@ -208,39 +208,11 @@ def compute_semeval_accuracy(test_labels, predicted_labels, scores, num_classes=
     return semeval_accuracy
 
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--task",
-                        default="NLI_M",
-                        type=str,
-                        required=True,
-                        choices=["QA_M", "NLI_M", "QA_B", "NLI_B"],
-                        help="Name of the task to evaluate.")
-    parser.add_argument("--dataset_type",
-                        default="sentihood",
-                        type=str,
-                        required=True,
-                        choices=["sentihood", "semeval"],
-                        help="Dataset for the task")
-    parser.add_argument("--test_dataset_path",
-                        default="data/sentihood/BERT-pair/test_NLI_M.csv",
-                        type=str,
-                        required=True,
-                        help="Test dataset (csv format)")
-    parser.add_argument("--predictions_path",
-                        default="results/sentihood_NLI_M.csv",
-                        type=str,
-                        required=True,
-                        help="Predictions and scores path")
-    args = parser.parse_args()
+def main(task="NLI_M", dataset_type="sentihood", test_dataset_path="", predictions_path=""):
+    predicted_labels, scores = get_predictions(predictions_path)
 
-    dataset = args.dataset_type
-    task = args.task
-
-    predicted_labels, scores = get_predictions(args.predictions_path)
-
-    if dataset == "sentihood":
-        test_original_sentences, test_auxiliary_sentences, test_labels = sentihood_get_dataset(args.test_dataset_path)
+    if dataset_type == "sentihood":
+        test_original_sentences, test_auxiliary_sentences, test_labels = sentihood_get_dataset(test_dataset_path)
 
         sentihood_aspect_strict_acc = compute_sentihood_aspect_strict_accuracy(test_labels, predicted_labels)
         print(f"{task} Sentihood aspect strict accuracy: {sentihood_aspect_strict_acc}")
@@ -249,11 +221,12 @@ if __name__ == '__main__':
         sentihood_aspect_macro_AUC = compute_sentihood_aspect_macro_AUC(test_labels, scores)
         print(f"{task} Sentihood aspect macro AUC: {sentihood_aspect_macro_AUC}")
 
-        sentihood_sentiment_macro_AUC, sentihood_sentiment_accuracy = compute_sentihood_sentiment_classification_metrics(test_labels, scores)
+        sentihood_sentiment_macro_AUC, sentihood_sentiment_accuracy = compute_sentihood_sentiment_classification_metrics(
+            test_labels, scores)
         print(f"{task} Sentihood sentiment accuracy: {sentihood_sentiment_accuracy}")
         print(f"{task} Sentihood sentiment macro AUC: {sentihood_sentiment_macro_AUC}")
 
-    elif dataset == "semeval":
+    elif dataset_type == "semeval2014":
         test_original_sentences, test_auxiliary_sentences, test_labels = semeval_get_dataset(args.test_dataset_path)
 
         semeval_aspect_precision, semeval_aspect_recall, semeval_aspect_micro_F1 = compute_semeval_PRF(test_labels,
@@ -268,3 +241,38 @@ if __name__ == '__main__':
         print(f"{task} Semeval 4-classes accuracy: {semeval_4_classes_accuracy}")
         print(f"{task} Semeval 3-classes accuracy: {semeval_3_classes_accuracy}")
         print(f"{task} Semeval 2-classes accuracy: {semeval_2_classes_accuracy}")
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--task",
+                        default="NLI_M",
+                        type=str,
+                        required=True,
+                        choices=["QA_M", "NLI_M", "QA_B", "NLI_B"],
+                        help="Name of the task to evaluate.")
+    parser.add_argument("--dataset_type",
+                        default="sentihood",
+                        type=str,
+                        required=True,
+                        choices=["sentihood", "semeval2014"],
+                        help="Dataset for the task")
+    parser.add_argument("--test_dataset_path",
+                        default="data/sentihood/BERT-pair/test_NLI_M.csv",
+                        type=str,
+                        required=True,
+                        help="Test dataset_type (csv format)")
+    parser.add_argument("--predictions_path",
+                        default="results/sentihood_NLI_M.csv",
+                        type=str,
+                        required=True,
+                        help="Predictions and scores path")
+    args = parser.parse_args()
+
+    task = args.task
+    dataset_type = args.dataset_type
+    test_dataset_path = args.test_dataset_path
+    predictions_path = args.predictions_path
+
+    main(task, dataset_type, test_dataset_path, predictions_path)
+
