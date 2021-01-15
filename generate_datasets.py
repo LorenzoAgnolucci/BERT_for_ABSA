@@ -128,6 +128,32 @@ def generate_sentihood_NLI_B(data, output_path):
     df.to_csv(output_path, sep='\t', index=False, header=False)
 
 
+def generate_sentihood_single(data, output_path, set):
+    output = {}
+    for location in sentihood_locations:
+        output[location] = {}
+        for aspect in sentihood_aspects:
+            output[location][aspect] = [["id", "original_sentence", "aspect", "label_id", "label"]]
+    for entry in data:
+        id = entry["id"]
+        original_sentence = entry["text"]
+        for location in sentihood_locations:
+            if location in original_sentence:
+                for aspect in sentihood_aspects:
+                    label = "none"
+                    for opinion in entry["opinions"]:
+                        if opinion["target_entity"] == location and opinion["aspect"] == aspect:
+                            if opinion["sentiment"] == "Positive":
+                                label = "positive"
+                            elif opinion["sentiment"] == "Negative":
+                                label = "negative"
+                    output[location][aspect].append([id, original_sentence, aspect, sentihood_label2id[label], label])
+    for location in sentihood_locations:
+        for aspect in sentihood_aspects:
+            df = pd.DataFrame(output[location][aspect])
+            df.to_csv(f"{output_path}/location_{location[-1]}_{aspect}/{set}.csv", sep='\t', index=False, header=False)
+
+
 def convert_sentihood_input(data):
     for entry in data:
         entry["text"] = entry["text"].replace("LOCATION2", "location - 2").replace("LOCATION1", "location - 1")
@@ -227,6 +253,24 @@ def generate_semeval_NLI_B(root, output_path):
     df.to_csv(output_path, sep='\t', index=False, header=False)
 
 
+def generate_semeval_single(root, output_path, set):
+    output = {}
+    for aspect in semeval_aspects:
+        output[aspect] = [["id", "original_sentence", "aspect", "label_id", "label"]]
+    for sentence in root:
+        id = sentence.attrib["id"]
+        original_sentence = sentence.find("text").text
+        for aspect in semeval_aspects:
+            label = "none"
+            for opinion in sentence.find("aspectCategories"):
+                if opinion.attrib["category"] == aspect:
+                    label = opinion.attrib["polarity"]
+            output[aspect].append([id, original_sentence, aspect, semeval_label2id[label], label])
+    for aspect in semeval_aspects:
+        df = pd.DataFrame(output[aspect])
+        df.to_csv(f"{output_path}/{aspect}/{set}.csv", sep='\t', index=False, header=False)
+
+
 def convert_semeval_input(root):
     for sentence in root:
         for aspect in sentence.find("aspectCategories"):
@@ -240,6 +284,10 @@ if __name__ == '__main__':
     SEMEVAL_DIR = "data/semeval2014/"
 
     Path(f"{SENTIHOOD_DIR}BERT-pair/").mkdir(parents=True, exist_ok=True)
+    Path(f"{SENTIHOOD_DIR}BERT-single/").mkdir(parents=True, exist_ok=True)
+    for location in sentihood_locations:
+        for aspect in sentihood_aspects:
+            Path(f"{SENTIHOOD_DIR}BERT-single/location_{location[-1]}_{aspect}").mkdir(parents=True, exist_ok=True)
     for file in os.scandir(SENTIHOOD_DIR):
         if file.name.endswith(".json"):
             with open(file.path, "r") as f:
@@ -254,8 +302,13 @@ if __name__ == '__main__':
                 generate_sentihood_QA_B(data, output_path)
                 output_path = f"{SENTIHOOD_DIR}BERT-pair/{set}_NLI_B.csv"
                 generate_sentihood_NLI_B(data, output_path)
+                output_path = f"{SENTIHOOD_DIR}BERT-single"
+                generate_sentihood_single(data, output_path, set)
 
     Path(f"{SEMEVAL_DIR}BERT-pair/").mkdir(parents=True, exist_ok=True)
+    Path(f"{SEMEVAL_DIR}BERT-single/").mkdir(parents=True, exist_ok=True)
+    for aspect in semeval_aspects:
+        Path(f"{SEMEVAL_DIR}BERT-single/{aspect}").mkdir(parents=True, exist_ok=True)
     for file in os.scandir(SEMEVAL_DIR):
         if file.name.endswith(".xml"):
             with open(file.path, "r") as f:
@@ -270,3 +323,5 @@ if __name__ == '__main__':
                 generate_semeval_QA_B(root, output_path)
                 output_path = f"{SEMEVAL_DIR}BERT-pair/{set}_NLI_B.csv"
                 generate_semeval_NLI_B(root, output_path)
+                output_path = f"{SEMEVAL_DIR}BERT-single"
+                generate_semeval_single(root, output_path, set)
