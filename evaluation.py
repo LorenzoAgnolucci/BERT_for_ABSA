@@ -209,7 +209,7 @@ def main(task="NLI_M", dataset_type="sentihood", test_dataset_path="", predictio
         print(f"{task} Sentihood sentiment macro AUC: {sentihood_sentiment_macro_AUC}")
 
     elif dataset_type == "semeval2014":
-        test_original_sentences, test_auxiliary_sentences, test_labels = get_dataset(args.test_dataset_path)
+        test_original_sentences, test_auxiliary_sentences, test_labels = get_dataset(test_dataset_path)
 
         semeval_aspect_precision, semeval_aspect_recall, semeval_aspect_micro_F1 = compute_semeval_PRF(test_labels,
                                                                                                        predicted_labels)
