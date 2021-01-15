@@ -1,6 +1,5 @@
 import os
 import json
-import nltk
 import pandas as pd
 import re
 import xml.etree.ElementTree as ET
@@ -11,9 +10,10 @@ from pathlib import Path
 ### Sentihood #################
 ###############################
 
-sentihood_sentiments = ["None", "Positive", "Negative"]
+sentihood_sentiments = ["none", "positive", "negative"]
 sentihood_locations = ["location - 1", "location - 2"]
 sentihood_aspects = ["general", "price", "safety", "transit location"]
+sentihood_label2id = {"none": 0, "positive": 1, "negative": 2}
 
 
 def generate_sentihood_QA_M(data, output_path):
@@ -25,17 +25,17 @@ def generate_sentihood_QA_M(data, output_path):
             if location in original_sentence:
                 for aspect in sentihood_aspects:
                     auxiliary_sentence = f"what do you think of the {aspect} of {location} ?"
-                    label = "None"
+                    label = "none"
                     for opinion in entry["opinions"]:
                         if opinion["target_entity"] == location and opinion["aspect"] == aspect:
                             if opinion["sentiment"] == "Positive":
-                                label = "Positive"
+                                label = "positive"
                             elif opinion["sentiment"] == "Negative":
-                                label = "Negative"
-                    output.append([id, original_sentence, auxiliary_sentence, label])
+                                label = "negative"
+                    output.append([id, original_sentence, auxiliary_sentence, sentihood_label2id[label], label])
     loc1_rows = sorted([row for row in output if "location - 1" in row[2]], key=lambda el: el[0])
     loc2_rows = sorted([row for row in output if "location - 2" in row[2]], key=lambda el: el[0])
-    output = [["id", "original_sentence", "auxiliary_sentence", "label"]]
+    output = [["id", "original_sentence", "auxiliary_sentence", "label_id", "label"]]
     output += loc1_rows + loc2_rows
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)
@@ -50,17 +50,17 @@ def generate_sentihood_NLI_M(data, output_path):
             if location in original_sentence:
                 for aspect in sentihood_aspects:
                     auxiliary_sentence = f"{location} - {aspect}"
-                    label = "None"
+                    label = "none"
                     for opinion in entry["opinions"]:
                         if opinion["target_entity"] == location and opinion["aspect"] == aspect:
                             if opinion["sentiment"] == "Positive":
-                                label = "Positive"
+                                label = "positive"
                             elif opinion["sentiment"] == "Negative":
-                                label = "Negative"
-                    output.append([id, original_sentence, auxiliary_sentence, label])
+                                label = "negative"
+                    output.append([id, original_sentence, auxiliary_sentence, sentihood_label2id[label], label])
     loc1_rows = sorted([row for row in output if "location - 1" in row[2]], key=lambda el: el[0])
     loc2_rows = sorted([row for row in output if "location - 2" in row[2]], key=lambda el: el[0])
-    output = [["id", "original_sentence", "auxiliary_sentence", "label"]]
+    output = [["id", "original_sentence", "auxiliary_sentence", "label_id", "label"]]
     output += loc1_rows + loc2_rows
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)
@@ -76,11 +76,11 @@ def generate_sentihood_QA_B(data, output_path):
                 for aspect in sentihood_aspects:
                     current_output = []
                     for sentiment in sentihood_sentiments:
-                        auxiliary_sentence = f"the polarity of the aspect {aspect} of {location} - is {sentiment} ."
+                        auxiliary_sentence = f"the polarity of the aspect {aspect} of {location} is {sentiment}"
                         current_output.append([id,
                                                original_sentence,
                                                auxiliary_sentence,
-                                               1 if sentiment == "None" else 0])  # Default label is 1 for None
+                                               1 if sentiment == "none" else 0])  # Default label is 1 for None
                     for opinion in entry["opinions"]:
                         if opinion["target_entity"] == location and opinion["aspect"] == aspect:
                             current_output[0][-1] = 0  # Overwrite label of None if there is an opinion
@@ -107,11 +107,11 @@ def generate_sentihood_NLI_B(data, output_path):
                 for aspect in sentihood_aspects:
                     current_output = []
                     for sentiment in sentihood_sentiments:
-                        auxiliary_sentence = f"{sentiment} - {location} - {aspect}"
+                        auxiliary_sentence = f"{location} - {aspect} - {sentiment}"
                         current_output.append([id,
                                                original_sentence,
                                                auxiliary_sentence,
-                                               1 if sentiment == "None" else 0])  # Default label is 1 for None
+                                               1 if sentiment == "none" else 0])  # Default label is 1 for None
                     for opinion in entry["opinions"]:
                         if opinion["target_entity"] == location and opinion["aspect"] == aspect:
                             current_output[0][-1] = 0  # Overwrite label of None if there is an opinion
@@ -130,11 +130,7 @@ def generate_sentihood_NLI_B(data, output_path):
 
 def convert_sentihood_input(data):
     for entry in data:
-        entry["text"] = " ".join(nltk.word_tokenize(entry["text"]))\
-                        .replace("LOCATION1", "location - 1").replace("LOCATION2", "location - 2")\
-                        .replace("'", "' ")\
-                        .lower()
-        entry["text"] = entry["text"]
+        entry["text"] = entry["text"].replace("LOCATION2", "location - 2").replace("LOCATION1", "location - 1")
         for opinion in entry["opinions"]:
             opinion["target_entity"] = opinion["target_entity"]\
                     .replace("LOCATION1", "location - 1").replace("LOCATION2", "location - 2")
@@ -148,10 +144,11 @@ def convert_sentihood_input(data):
 
 semeval_sentiments = ["positive", "neutral", "negative", "conflict", "none"]
 semeval_aspects = ["price", "anecdotes", "food", "ambience", "service"]
+semeval_label2id = {"positive": 0, "neutral": 1, "negative": 2, "conflict": 3, "none": 4}
 
 
 def generate_semeval_QA_M(root, output_path):
-    output = [["id", "label", "original_sentence", "auxiliary_sentence"]]
+    output = [["id", "original_sentence", "auxiliary_sentence", "label_id", "label"]]
     for sentence in root:
         id = sentence.attrib["id"]
         original_sentence = sentence.find("text").text
@@ -161,13 +158,13 @@ def generate_semeval_QA_M(root, output_path):
             for opinion in sentence.find("aspectCategories"):
                 if opinion.attrib["category"] == aspect:
                     label = opinion.attrib["polarity"]
-            output.append([id, label, auxiliary_sentence, original_sentence])
+            output.append([id, original_sentence, auxiliary_sentence, semeval_label2id[label], label])
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)
 
 
 def generate_semeval_NLI_M(root, output_path):
-    output = [["id", "label", "original_sentence", "auxiliary_sentence"]]
+    output = [["id", "original_sentence", "auxiliary_sentence", "label_id", "label"]]
     for sentence in root:
         id = sentence.attrib["id"]
         original_sentence = sentence.find("text").text
@@ -177,13 +174,13 @@ def generate_semeval_NLI_M(root, output_path):
             for opinion in sentence.find("aspectCategories"):
                 if opinion.attrib["category"] == aspect:
                     label = opinion.attrib["polarity"]
-            output.append([id, label, auxiliary_sentence, original_sentence])
+            output.append([id, original_sentence, auxiliary_sentence, semeval_label2id[label], label])
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)
 
 
 def generate_semeval_QA_B(root, output_path):
-    output = [["id", "label", "original_sentence", "auxiliary_sentence"]]
+    output = [["id", "original_sentence", "auxiliary_sentence", "label"]]
     for sentence in root:
         id = sentence.attrib["id"]
         original_sentence = sentence.find("text").text
@@ -191,7 +188,7 @@ def generate_semeval_QA_B(root, output_path):
             current_output = []
             found_opinion_flag = False
             for sentiment in semeval_sentiments:
-                auxiliary_sentence = f"the polarity of the aspect {aspect} is {sentiment} ."
+                auxiliary_sentence = f"the polarity of the aspect {aspect} is {sentiment}."
                 label = 0
                 for opinion in sentence.find("aspectCategories"):
                     if opinion.attrib["category"] == aspect:
@@ -200,14 +197,14 @@ def generate_semeval_QA_B(root, output_path):
                             found_opinion_flag = True
                 if not found_opinion_flag and sentiment == "none":
                     label = 1
-                current_output.append([id, label, auxiliary_sentence, original_sentence])
+                current_output.append([id, original_sentence, auxiliary_sentence, label])
             output.extend(current_output)
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)
 
 
 def generate_semeval_NLI_B(root, output_path):
-    output = [["id", "label", "original_sentence", "auxiliary_sentence"]]
+    output = [["id", "original_sentence", "auxiliary_sentence", "label"]]
     for sentence in root:
         id = sentence.attrib["id"]
         original_sentence = sentence.find("text").text
@@ -215,7 +212,7 @@ def generate_semeval_NLI_B(root, output_path):
             current_output = []
             found_opinion_flag = False
             for sentiment in semeval_sentiments:
-                auxiliary_sentence = f"{sentiment} - {aspect}"
+                auxiliary_sentence = f"{aspect} - {sentiment}"
                 label = 0
                 for opinion in sentence.find("aspectCategories"):
                     if opinion.attrib["category"] == aspect:
@@ -224,7 +221,7 @@ def generate_semeval_NLI_B(root, output_path):
                             found_opinion_flag = True
                 if not found_opinion_flag and sentiment == "none":
                     label = 1
-                current_output.append([id, label, auxiliary_sentence, original_sentence])
+                current_output.append([id, original_sentence, auxiliary_sentence, label])
             output.extend(current_output)
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)

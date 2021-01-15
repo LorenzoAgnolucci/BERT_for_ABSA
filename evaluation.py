@@ -4,13 +4,7 @@ import numpy as np
 import argparse
 
 
-sentihood_id2label = {0: "None", 1: "Positive", 2: "Negative"},
-sentihood_label2id = {"None": 0, "Positive": 1, "Negative": 2}
-semeval_id2label = {0: "positive", 1: "neutral", 2: "negative", 3: "conflict", 4: "none"}
-semeval_label2id = {"positive": 0, "neutral": 1, "negative": 2, "conflict": 3, "none": 4}
-
-
-def sentihood_get_dataset(path):
+def get_dataset(path):
     original_sentences = []
     auxiliary_sentences = []
     labels = []
@@ -18,19 +12,7 @@ def sentihood_get_dataset(path):
     for row in data:
         original_sentences.append(row[1])
         auxiliary_sentences.append(row[2])
-        labels.append(sentihood_label2id[row[3]])
-    return original_sentences, auxiliary_sentences, labels
-
-
-def semeval_get_dataset(path):
-    original_sentences = []
-    auxiliary_sentences = []
-    labels = []
-    data = pd.read_csv(path, header=0, sep="\t").values.tolist()
-    for row in data:
-        original_sentences.append(row[3])
-        auxiliary_sentences.append(row[2])
-        labels.append(semeval_label2id[row[1]])
+        labels.append(row[3])
     return original_sentences, auxiliary_sentences, labels
 
 
@@ -212,7 +194,7 @@ def main(task="NLI_M", dataset_type="sentihood", test_dataset_path="", predictio
     predicted_labels, scores = get_predictions(predictions_path)
 
     if dataset_type == "sentihood":
-        test_original_sentences, test_auxiliary_sentences, test_labels = sentihood_get_dataset(test_dataset_path)
+        test_original_sentences, test_auxiliary_sentences, test_labels = get_dataset(test_dataset_path)
 
         sentihood_aspect_strict_acc = compute_sentihood_aspect_strict_accuracy(test_labels, predicted_labels)
         print(f"{task} Sentihood aspect strict accuracy: {sentihood_aspect_strict_acc}")
@@ -227,7 +209,7 @@ def main(task="NLI_M", dataset_type="sentihood", test_dataset_path="", predictio
         print(f"{task} Sentihood sentiment macro AUC: {sentihood_sentiment_macro_AUC}")
 
     elif dataset_type == "semeval2014":
-        test_original_sentences, test_auxiliary_sentences, test_labels = semeval_get_dataset(args.test_dataset_path)
+        test_original_sentences, test_auxiliary_sentences, test_labels = get_dataset(args.test_dataset_path)
 
         semeval_aspect_precision, semeval_aspect_recall, semeval_aspect_micro_F1 = compute_semeval_PRF(test_labels,
                                                                                                        predicted_labels)
