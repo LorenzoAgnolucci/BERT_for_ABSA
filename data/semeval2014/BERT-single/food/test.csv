@@ -1,0 +1,801 @@
+id	original_sentence	aspect	label_id	label
+32897564#894393#2	The bread is top notch as well.	food	0	positive
+33070600#670328#0	I have to say they have one of the fastest delivery times in the city.	food	4	none
+33070600#670328#2	Food is always fresh and hot- ready to eat!	food	0	positive
+36244464#949326#5	Did I mention that the coffee is OUTSTANDING?	food	0	positive
+32894246#870052#0	Certainly not the best sushi in New York, however, it is always fresh, and the place is very clean, sterile.	food	3	conflict
+32894246#870052#1	I trust the people at Go Sushi, it never disappoints.	food	4	none
+32894246#870052#2	Straight-forward, no surprises, very decent Japanese food.	food	0	positive
+35390182#756337#4	BEST spicy tuna roll, great asian salad.	food	0	positive
+35390182#756337#5	Try the rose roll (not on menu).	food	0	positive
+11447227#436718#3	I love the drinks, esp lychee martini, and the food is also VERY good.	food	0	positive
+33071731#1007204#3	In fact, this was not a Nicoise salad and was barely eatable.	food	2	negative
+33085939#758010#0	While there's a decent menu, it shouldn't take ten minutes to get your drinks and 45 for a dessert pizza.	food	0	positive
+11313431#524365#3	Once we sailed, the top-notch food and live entertainment sold us on a unforgettable evening.	food	0	positive
+11359717#1138929#1	Our waiter was horrible; so rude and disinterested.	food	4	none
+11359717#1138929#3	The sangria's - watered down.	food	2	negative
+11359717#1138929#4	menu - uneventful, small.	food	2	negative
+11313439#692431#0	Anytime and everytime I find myself in the neighborhood I will go to Sushi Rose for fresh sushi and great portions all at a reasonable price.	food	0	positive
+11351513#832512#0	Great food but the service was dreadful!	food	0	positive
+35390148#588852#2	The portions of the food that came out were mediocre.	food	1	neutral
+11351513#832512#1	the two waitress's looked like they had been sucking on lemons.	food	4	none
+11313431#524365#2	From the beginning, we were met by friendly staff memebers, and the convienent parking at Chelsea Piers made it easy for us to get to the boat.	food	4	none
+35196520#758440#4	We enjoyed ourselves thoroughly and will be going back for the desserts ....	food	0	positive
+35196527#481646#2	Desserts are almost incredible: my personal favorite is their Tart of the Day.	food	0	positive
+35668126#536759#0	I am surprised at the lower reviews because it is definitely better than other places I have tried with higher ratings.	food	4	none
+35668126#536759#1	Maybe the secret was that we went on a Sunday night and everything was great.	food	4	none
+35668126#536759#2	The food was extremely tasty, creatively presented and the wine excellent.	food	0	positive
+33070286#1133164#0	WE ENDED UP IN LITTLE ITALY IN LATE AFTERNOON.	food	4	none
+33070286#1133164#4	WE WERE PLEASANTLY SURPRISED WITH OUR CHOICE.	food	4	none
+33070286#1133164#6	THE LASAGNA WAS PROBABLY THE BEST I HAVE TASTED.	food	0	positive
+32894336#662479#0	Harumi Sushi has the freshest and most delicious array of sushi in NYC.	food	0	positive
+32894336#662479#1	I highly recommend it for not just its superb cuisine, but also for its friendly owners and staff.	food	0	positive
+32892130#435512#0	If you're craving some serious indian food and desire a cozy ambiance, this is quite and exquisite choice.	food	0	positive
+32892130#435512#4	I definitely enjoyed the food as well.	food	0	positive
+32894791#1611374#0	have always had a great time here.	food	4	none
+11432316#715219#2	It was pleasantly uncrowded, the service was delightful, the garden adorable, the food (from appetizers to entrees) was delectable.	food	0	positive
+33085669#409731#13	You will be very happy with the experience.	food	4	none
+11351354#412616#0	The food is surprisingly good, and the decor is nice.	food	0	positive
+35714274#1076679#0	How pretentious and inappropriate for MJ Grill to claim that it provides power lunch and dinners!	food	2	negative
+35714274#1076679#5	Two wasted steaks -- what a crime!	food	2	negative
+35720486#684689#4	The staff should be a bit more friendly.	food	4	none
+33507331#1177339#2	I absolutely suggest this place.	food	4	none
+33064346#1483297#0	I think the meatball parm is good.	food	0	positive
+11417054#1062693#2	If you want good tasting, well seasoned latin food eat at Cabana and you can't go wrong.	food	0	positive
+13383936#420974#4	Definitely try the taglierini with truffles - it was incredible.	food	0	positive
+13383936#420974#5	Also, the staff is very attentive and really personable.	food	4	none
+13383936#420974#6	Overall, this is a great new restaurant that has been consistently good every time I have been.	food	4	none
+36244423#1058258#2	The gnocchi literally melts in your mouth!	food	0	positive
+11559272#409013#0	Had a great experience at Trio ... staff was pleasant; food was tasty and large in portion size - I would highly recommend the portobello/gorgonzola/sausage appetizer and the lobster risotto.	food	0	positive
+36244784#0#3	Entrees include classics like lasagna, fettuccine Alfredo and chicken parmigiana.	food	1	neutral
+32938222#1552119#2	The food is good, the teriyaki I recommend.	food	0	positive
+11546184#1465600#0	Meal was very expensive for what you get.	food	2	negative
+32895093#418997#3	Try the Peanut Butter Sorbet and the pizza with soy cheese!	food	0	positive
+32406302#615620#2	Good food at the right price, what more can you ask for.	food	0	positive
+35390182#756337#1	We love it, and took buses and cabs to get there.	food	4	none
+11302356#1455624#2	If you' re in New York, you do not want to miss this place.	food	4	none
+11302356#1455624#1	The food is top notch, the service is attentive, and the atmosphere is great.	food	0	positive
+11302356#1455624#0	I've been coming here on and off for the past five years and I have to say that La Lanterna has never, ever dissapointed me.	food	4	none
+11302355#533813#0	Great food, great waitstaff, great atmosphere, and best of all GREAT beer!	food	0	positive
+35698351#821341#0	this is still one of my most favorite restaurants in the area the food is inexpensive but very good (kimono shrimp special was excellent) and has a great atmosphere.	food	0	positive
+11351664#1238806#0	My husband and I moved to Nolita 6 years ago and for as long as we have lived here, Peasant has been our favorite!	food	4	none
+33070305#1312437#6	The whole experience was satisfying.	food	4	none
+33070305#1312437#1	However, it was worth the visit.	food	4	none
+33070305#1312437#2	The menu is interesting and quite reasonably priced.	food	0	positive
+33070305#1312437#3	The food was delicious and clearly fresh ingredients were used.	food	0	positive
+11610073#973003#3	This made it obvious that the food wasn't cooked fresh; it was obviously made before hand and then reheated.	food	2	negative
+11464789#378665#0	Appetizer are excellent here; you can make a great (and inexpensive) meal out of them.	food	0	positive
+11464789#378665#1	The spicy mussels are a highlight.	food	0	positive
+32899282#556036#2	Also get the Onion Rings -- best we've ever had.	food	0	positive
+11351587#1488758#8	Would not return for the amount we paid.	food	4	none
+11351587#1488758#2	However, being foodies, we were utterly disappointed with the food.	food	2	negative
+11359656#1716239#1	Huge portions, great and attentive service, and pretty good prices.	food	0	positive
+11359797#469087#7	I was highly disappointed by their service and food.	food	2	negative
+11359797#469087#6	I complained to the waiter and then to the manager, but the intensity of rudeness from them just went up.	food	4	none
+32938828#1194079#1	The food is great and the milkshakes are even better!	food	0	positive
+11349445#757796#5	Stay away if you're claustrophobic	food	4	none
+11349445#757796#0	If you're in the 'hood, definitely stop in.	food	4	none
+11349445#757796#1	the mushroom barley soup is amazing.	food	0	positive
+11602699#875811#0	On the recommendation of a friend, I checked out Arezzo with my wife.	food	4	none
+11602699#875811#1	I'm glad I did as the food was very good and the staff was friendly, courteous and efficient.	food	0	positive
+11313316#1234433#2	Their duck here is also absolutely delicious.	food	0	positive
+11313316#1234433#0	This is definitely one of the places that I have continued to come back to over the years.	food	4	none
+11351762#644011#1	While it was large and a bit noisy, the drinks were fantastic, and the food was superb.	food	0	positive
+35719198#0#5	One caveat: Some of the curried casseroles can be a trifle harsh.	food	2	negative
+35158451#1089920#3	I wasn't impressed and it wasn't SPICEY????	food	2	negative
+33070461#1496736#1	The food was almost always EXCELLENT.	food	0	positive
+32882616#562969#4	I was pleasently surprised at the taste.	food	0	positive
+33070309#423221#1	A nice space, as long as it doesn't get too crowded and a singleminded devotion to its chosen cuisine make Mare a great choice for seafood lovers.	food	0	positive
+32882616#562969#3	I never had an orange donut before so I gave it a shot.	food	1	neutral
+35171678#484493#3	they really provide a relaxing, laid-back atmosphere.	food	4	none
+32945645#1528063#2	This particular location certainly uses substandard meats.	food	2	negative
+32895093#418997#0	I stumbled upon this resteraunt on my way home from the subway.	food	4	none
+11546184#1465600#4	The Management was less than accomodating.	food	4	none
+13383936#420974#2	The ambience is also more laid-back and relaxed.	food	4	none
+35692932#1064131#3	the teas are great and all the sweets are homemade.	food	0	positive
+11488685#420977#1	mojitos and the service are the best part in there	food	0	positive
+35397104#0#3	Sandwiches, burgers and salads, like the lemon-dressed cobb, are classic successes.	food	0	positive
+35820984#608922#0	this restaurant is absolutely beautiful.	food	4	none
+35820984#608922#1	The design is very intimate and romantic.	food	4	none
+35820984#608922#2	The food was wonderful and imaginative.	food	0	positive
+35820984#608922#3	The staff is very sharp and they look good too.	food	4	none
+36245348#821441#2	The worst though was the taste.	food	2	negative
+36245348#821441#3	They were dry, stale and pretty flavorless.	food	2	negative
+11432442#650772#5	The fajita we tried was tasteless and burned and the mole sauce was way too sweet.	food	2	negative
+11432442#650772#6	Stay with the roasted chickens and you'll be fine.	food	0	positive
+32944693#1193404#4	The atmosphere is warm, comfortable, artsy and sexy.	food	4	none
+32944693#1193404#1	The food is great (big selection, reasonable prices) and the drinks are really good.	food	0	positive
+35693214#539116#1	The steak melted in my mouth.	food	0	positive
+32950007#1320096#3	The food did take a few extra minutes to come, but the cute waiters' jokes and friendliness made up for it.	food	4	none
+35938288#666236#2	Most importantly, it is reasonably priced.	food	4	none
+11350660#564640#1	The selection of food is excellent (I'm not used to having much choice at restaurants), and the atmosphere is great.	food	0	positive
+35393632#1591698#7	Only suggestion is that you skip the dessert, it was overpriced and fell short on taste.	food	2	negative
+15087705#871249#1	Food was decent, but not great.	food	0	positive
+11349871#518230#0	I have no idea why this restaurant is so often overlooked.	food	4	none
+11349871#518230#1	From the moment you walk in, you feel like you're in the perfect place.	food	4	none
+11651062#1264882#1	i dont know what some people who rave about this hot dog are talking about.	food	2	negative
+11359619#487952#3	it is a hidden delight complete with a quaint bar and good food.	food	0	positive
+32893510#483382#2	I find that most Kosher restaurants are average to good, but this has been the best I've eaten so far.	food	4	none
+11351628#404492#6	The waiters ALWAYS look angry and even ignore their high-tipping regulars.	food	4	none
+35709141#1107179#0	the atmosphere is very nice, and a welcome escape from the rest of the SI mall.	food	4	none
+32935211#1468239#1	Yes, they're a bit more expensive then typical, but then again, so is their food.	food	0	positive
+11351725#582163#11	Not terrible, but not the restaurant in the reviews of 2002.	food	4	none
+33069901#1437116#3	I can say that the wraps, burgers and salads were all fresh, tasty and the mango margareta at $9 was WELL WORTH the money.	food	0	positive
+33069901#1437116#4	It was delicious and large!	food	0	positive
+35709337#1579632#6	Anywhere else, the prices would be 3x as high!	food	4	none
+33069901#1437116#1	The service we experienced was friendly and good.	food	4	none
+11351725#582163#9	Our waiter was friendly and it is a shame that he didnt have a supportive staff to work with.	food	4	none
+11351725#582163#7	The folding chair I was seated at was uncomfortable.	food	4	none
+11351725#582163#5	As we waited I watched 3 seperate groups of diners discuss how dissapointed they also were.	food	4	none
+11432842#416795#5	An excellent choice in midtown.	food	4	none
+11432842#416795#1	Service was among the best I have ever had in NYC.	food	4	none
+11432842#416795#2	The fettucino alfredo was amazing.	food	0	positive
+33067279#1612676#1	The food was very good and I was pleasantly surprised to see so many vegan options.	food	0	positive
+32930165#1643018#3	I know real Indian food and this wasn't it.	food	2	negative
+11359727#487554#5	Be sure to try the Smoked Trout...Lamb Chops, Veal Chops, Rabbit, the potato gratin, on and on and on...	food	0	positive
+11359727#487554#2	Even when the chef is not in the house, the food and service are right on target.	food	0	positive
+32893609#708406#2	Everything from the eggs benedict to the mussels and even the hamburger were done well and very tasty.	food	0	positive
+32926987#668438#1	The waiters were very professional, courteous and attentive.	food	4	none
+32926987#668438#0	My boyfriend and I went here last night and LOVED it!	food	4	none
+32935729#785247#5	The falafal was rather over cooked and dried but the chicken was fine.	food	3	conflict
+32935211#1468239#3	I highly reccomend the grand marnier shrimp, it's insanely good.	food	0	positive
+32944704#492723#0	We been there and we really enjoy the food, was areally great food, and the service was really good.	food	0	positive
+33061325#0#3	Desserts include flan and sopaipillas.	food	1	neutral
+32894513#498296#0	I was starving and the small portions were driving me crazy!	food	2	negative
+35709141#1107179#4	The wait staff was loud and inconsiderate.	food	4	none
+35709141#1107179#1	However, the food and service and dramatically lacking.	food	2	negative
+35709141#1107179#2	The sushi is cut in blocks bigger than my cell phone.	food	2	negative
+11350496#1560668#3	The service is great, my soup always arrives nice and hot.	food	0	positive
+11351625#909535#1	It had been awhile and I forgot just how delicious crepes can be.	food	0	positive
+11351622#0#5	Montparnasse's desserts--especially the silken creme brulee and paper-thin apple tart--are good enough on their own to make the restaurant worth the trip.	food	0	positive
+35701425#1155856#1	My friend told me about this restaurant for a year before he finally took me this weekend.	food	4	none
+11351620#1180095#0	i had a delicious shrimp creole.	food	0	positive
+11351620#1180095#1	The chicken dinner was real good.	food	0	positive
+32464595#574909#4	Beware of the chili signed food items not unless you want to call the fire department to douse the flames in your mouth.	food	2	negative
+32938222#1552119#1	The decor is designed in a contemporary Japanese style restaurant.	food	4	none
+11351620#1180095#3	but the food was delicious.	food	0	positive
+32464595#574909#2	Try the ribs, sizzling beef and couple it with coconut rice.	food	0	positive
+32893510#483382#3	The only drawback is that it's a little pricey.	food	4	none
+32893510#483382#0	Everything about this place was wonderful.	food	4	none
+32893040#1716582#5	The avocado salad is a personal fave.	food	0	positive
+32893040#1716582#6	And, the honey BBQ rib tips are yummy!	food	0	positive
+32893040#1716582#0	The BEST Chinese food Uptown!	food	0	positive
+35170181#0#2	Service is known for bending over backwards to make everyone happy.	food	4	none
+32464601#418474#1	The atmosphere is attractive, but a little uncomfortable.	food	4	none
+32464601#418474#2	The staff is very friendly.	food	4	none
+11359618#788741#3	Waiters are very friendly and the pasta is out of this world.	food	0	positive
+33068517#482841#2	Great wine list and great cocktail menu.	food	0	positive
+33068517#482841#1	The crab cakes are delicious and the BBQ rib was perfect.	food	0	positive
+35869867#649564#1	The food is wonderful, artfully done and simply delicious.	food	0	positive
+32864873#471207#1	Tiny restaurant with very fast service.	food	4	none
+11350539#680470#4	The sauce may not be for everyone, since it is distintive.	food	3	conflict
+33069536#707145#3	My husband and I have been there at least 6 times and we've always been given the highest service and often free desserts.	food	4	none
+32899414#512291#0	A beautiful atmosphere, perfect for drinks and/or appetizers.	food	4	none
+32469157#1273114#0	Curioni's Pizza has been around since the 1920's.	food	4	none
+32469157#1273114#1	They make the best pizza in New Jersey.	food	0	positive
+36072604#1106889#1	I recently visited over this past summer after being away for a year.	food	4	none
+36072604#1106889#2	What a difference, the service was very comforting and the food was better than average, but what really standed out was such a dynamic and extensive beer list.	food	0	positive
+12036269#580745#1	Frankly, the chinese food here is something I can make better at home.	food	2	negative
+12036269#580745#2	There was only one waiter for the whole restaurant upstairs.	food	4	none
+35695422#1464305#3	We started with the scallops and asparagus and also had the soft shell crab as well as the cheese plate.	food	1	neutral
+36220672#1714981#3	Not to be overlooked, the service is excellent.	food	4	none
+11651062#1264882#2	this without question is one of the worst hotdogs i have ever had.	food	2	negative
+32971013#1044651#2	The staff is unbelievably friendly, and I dream about their Saag gosht...so good.	food	0	positive
+33064238#563983#2	I also recommend the garlic knots.	food	0	positive
+32971013#1044651#0	Best Indian food I have ever eaten.	food	0	positive
+11351521#768768#3	You won't be dissapointed.	food	4	none
+33064238#563983#0	This place has the best pizza.	food	0	positive
+35816071#637243#0	Culinaria is a welcome addition to the Garment district- far better than any restaurant in the area.	food	4	none
+32896473#439063#3	The music which is sometimes a little too heavy for my taste.	food	4	none
+11350010#590580#1	The service is excellent and always informative without an air.	food	4	none
+11359762#927332#1	The owner and staff go to great lengths to make you feel comfortable.	food	4	none
+11359764#1373169#0	I can't stand this dungeon.	food	4	none
+32950061#1264345#1	The sushi is always fresh and yummy and the menu is pretty varied.	food	0	positive
+11359767#969393#2	The food was great - sushi was good, but the cooked food amazed us.	food	0	positive
+33106326#864352#0	their dinner specials are fantastic.	food	0	positive
+32894522#1633452#4	Delish and made to your liking!	food	0	positive
+32405935#675215#0	Great food, great drinks, nice dining atmosphere.	food	0	positive
+32894669#1075584#0	For the price you pay for the food here, you'd expect it to be at least on par with other Japanese restaurants.	food	2	negative
+32894669#1075584#1	Food portion was SMALL and below average.	food	2	negative
+32894669#1075584#8	Do yourself a favor and avoid this place at ALL COST!	food	4	none
+33070605#1232775#0	since the first time I came here I've been hooked.	food	4	none
+33085669#409731#11	Sit back in one of those comfortable chairs.	food	4	none
+11351360#1704700#2	People in the neighborhood seem to love it, too.	food	4	none
+32894416#1193614#6	in conclusion, THIS PLACE SUCKS!!!	food	4	none
+33070461#1496736#6	My favs here are the Tacos Pastor and the Tostada de Tinga...	food	0	positive
+11351814#1650882#6	Nick Stef's is one of the only places worthy of going in the area, so if you happen to be by Madison Square Garden or Herald's Square check it out!	food	4	none
+32936760#1397861#1	Have to tell you: Not at all impressed.	food	4	none
+11447227#436718#2	The bartenders and the managers are really nice and the decor is very comfy and laid-back, all the while being trendy.	food	4	none
+32889544#0#4	For a savory take on the soup and sandwich meal, try the hot and sour soup.	food	0	positive
+35693136#561234#0	This bar has it all - great drinks, cool atmosphere, excellent service and delicious food.	food	0	positive
+11484031#1129679#4	Also, the chick peas with shrimp (appetizer) is divine.	food	0	positive
+11351628#404492#9	Finally, I got sick of the bad service, obnoxious smirks, and snotty back talk.	food	4	none
+35701425#1155856#0	How have I never been to Agave before?	food	4	none
+11349536#778388#1	You're going to drop some coin, but completely worth it, especially if you are looking to impress someone.	food	4	none
+32893510#483382#1	We ordered lamb which was perfectly cooked and tasted awesome.	food	0	positive
+11359619#487952#6	i especially like their soft shell crab sandwich with fries.	food	0	positive
+33070605#1232775#2	if you're looking for authentic hong kong-style food, look no further.	food	0	positive
+35390182#756337#0	My wife I lived on the west side and found this while visiting firends on the UES.	food	4	none
+11351664#1238806#6	good food good wine that's it.	food	0	positive
+33070305#1312437#7	A nice find in the neighborhood.	food	4	none
+33070305#1312437#4	The staff was extremely friendly and pleasant.	food	4	none
+32894669#1075584#3	And as SOON as one person is done, she asked to pick up the plate immediately.	food	4	none
+11349840#433070#0	This place is Italian, not French.	food	4	none
+11351587#1488758#0	After so many great reviews here, my bf and I went to Esca to celebrate my birthday last nite.	food	4	none
+11478791#397331#1	While their kitchen food is delicious, their Sushi is out of this world.	food	0	positive
+35177381#521555#2	There was a heat problem to boot, so it was about 40 degrees in the restaurant -- we had to request to uncheck our coats!	food	4	none
+35171678#484493#2	everything is scrumptious, from the excellent service by cute waitresses, to the extremely lush atmosphere.	food	4	none
+11351664#1238806#1	It's traditional, simple italian food.	food	0	positive
+11432316#715219#0	My girlfriend and I just spent our 10 month anniversary at Lou Lou.	food	4	none
+35693081#540596#1	The food is all-around good, with the rolls usually excellent and the sushi/sashimi not quite on the same level.	food	0	positive
+35693081#540596#2	(The sashimi is cut a little thinly.	food	2	negative
+32944714#1559783#2	Bay Terrace mall is nothing (ok, almost nothing) without it!	food	4	none
+35708055#673129#2	Could have had better for 1/3 the price in Chinatown.	food	4	none
+11567247#1415594#0	My husband and I had a blast.	food	4	none
+11651062#1264882#6	personally i say save your money.	food	4	none
+11651063#1217842#0	In addition to great hot dogs, DOTP has wonderful breakfast sandwiches that feature, in addition to great things like tator tots and English muffins, a delicious NJ-based pork product know to us Jersey girls and boys as Taylor ham.	food	0	positive
+11651063#1217842#8	Believe me, they live up to the name.	food	4	none
+11349845#1188496#1	Well, it happened because of a graceless manager and a rude bartender who had us waiting 20 minutes for drinks, and then tells us to chill out.	food	4	none
+32892130#435512#1	Not only is the service great, but forming conversation around a table is so easy beacuse the atmosphere can be both romantic and comfortable.	food	4	none
+11359797#469087#5	When the dish arrived it was blazing with green chillis, definitely not edible by a human.	food	2	negative
+11351819#985076#1	The absolute worst service I've ever experienced and the food was below average (when they actually gave people the meals they ordered).	food	2	negative
+33061445#591371#1	It's about $7 for lunch and they have take-out or dine-in.	food	4	none
+11359762#927332#2	They are by far the BEST past in New York.	food	4	none
+35698240#574381#0	I have eaten here several times before attending an afternoon performance.	food	4	none
+32934709#796678#1	Everything is very cheap.	food	4	none
+32934709#796678#2	Be sure to accompany your food with one of their fresh juice concoctions.	food	0	positive
+32894963#1707639#1	The food is great and the prices are reasonable.	food	0	positive
+32894963#1707639#3	The place is clean, and if you like soul food, then this is the place to be!	food	0	positive
+32894963#1707639#4	You'll see a lot of people eating there after church.	food	4	none
+33059678#631861#3	I had roast chicken and a salad.	food	1	neutral
+32894966#1727613#0	I've been a regular customer at Juice Generation for the last 3 months - my office moved to the Film Center on Ninth Avenue and they are on the next block.	food	4	none
+32894966#1727613#7	They have a very good chicken with avocado and good tuna as well.	food	0	positive
+32894966#1727613#11	It's the kind of place I like to support!	food	4	none
+11558693#1436895#4	But the meals were terrible.	food	2	negative
+11558693#1436895#6	My chicken was completely dried out and on the cold side and the sauce was not very flavorful.	food	2	negative
+12037822#470071#0	Malted Milk Ball Gelato - have you ever in your life heard of anything so ridiculously wonderful?	food	0	positive
+36216551#1233442#0	just walk by the window and see all the unbiased positive reviews in all the major nyc publications.	food	4	none
+11558693#1436895#9	Way too much money for such a terrible meal.	food	2	negative
+35708055#673129#6	Would not recommend anyone to go.	food	4	none
+35700731#1595671#2	However, the service is absolutely horrible.	food	4	none
+11350033#1264371#4	A con was the slow bar service.	food	4	none
+35158410#1207085#5	Dessert was also to die for!	food	0	positive
+11660930#655010#6	BTW, the service is very good .	food	4	none
+11567247#1415594#4	We loved it and will go back!	food	4	none
+35695422#1464305#4	I came again weeks later with my boyfriend and again had a very nice experience.	food	4	none
+12036269#580745#8	It's eaten with black vinegar and shredded ginger.	food	1	neutral
+11350390#802808#2	The unattractive lighting made me want to gag, the food was overpriced, there was the most awful disco pop duo performing-and my escargot looked like it might crawl off the plate.	food	2	negative
+33068517#482841#4	We'll definitly be back again!	food	4	none
+11359618#788741#1	This is the best Italian restaurant in the city.	food	4	none
+11359619#487952#4	it is a cozy place to go with a couple of friends.	food	4	none
+11565268#560107#1	The service is always great, and the owner walks around to make sure you enjoy.	food	4	none
+11351628#404492#5	because the waiters need SEVERE ATTITUE ADJUSTMENTS.	food	4	none
+35160930#774531#2	There are numerous shavue restaurants in LA, but few out here.	food	4	none
+33068909#1189415#6	Horrible experience - stay away!	food	4	none
+32926987#668438#3	If this restaurant was in Manhattan, I would definitely go more often.	food	4	none
+11359791#791967#1	the food is delicious and highly recommended.	food	0	positive
+11359790#823900#2	When it came time to take the order the waiter gave us a hard time, walked away then came back with a paper and pen for us to write down what we wanted...excuse me but isn't that his job???	food	4	none
+11350269#481079#1	One of my Fav spots in the city.	food	4	none
+11351819#985076#4	Over priced, overrated....stay away!	food	4	none
+11351819#985076#0	Do not go to this restaurant.	food	4	none
+32894267#698671#2	since i was in the neighborhood, we made sure to give this a try.	food	4	none
+11565268#560107#2	All I can say is they are fantastic.	food	4	none
+11351628#404492#2	Dieters stick to salads or indulge in vegetarian platters.	food	0	positive
+32935729#785247#10	So for a filling and healthy meal give it a go.	food	0	positive
+33068909#1189415#7	I can't imagine how much worse it would have been if we'd gone at a prime time!	food	4	none
+33066089#490193#0	I have dined at Mammino several times now and each time it gets bettter.	food	4	none
+33066089#490193#4	Definitely something to come down and check out.	food	4	none
+11359727#487554#3	Since I cook for a living, I'm very fussy about the food I eat in restaurants.	food	4	none
+11639814#570590#2	The service was outstanding.	food	4	none
+11432842#416795#0	I went for restaurant week.	food	4	none
+11350141#1745557#0	My friends and I stop here for pizza before hitting the Kips Bay movie theater.	food	4	none
+11350141#1745557#1	We always enjoy the pizza.	food	0	positive
+11350141#1745557#4	The service is pretty good.	food	4	none
+35693216#1233439#0	I went there with a few friends and will return.	food	4	none
+32944693#1193404#0	This place has been around for a few years.	food	4	none
+11432442#650772#0	Yum, the chicken is great here.	food	0	positive
+36244423#1058258#3	I highly recommend this restaurant!!	food	4	none
+11559272#409013#1	You will find everything about Trio to your liking!	food	4	none
+11538980#453602#0	This place was the worst.	food	4	none
+32891589#573560#0	I ordered from here last week.	food	4	none
+32938222#1552119#0	This is a nice sushi restaurant in Brooklyn that's located on 86 street, right underneath the train station.	food	4	none
+32406302#615620#1	The food here was great, a treat from beginning to end.	food	0	positive
+11484031#1129679#1	The host (owner) and servers are personable and caring.	food	4	none
+32882616#562969#0	I decided to try out this place after hearing about it in many magazines.	food	4	none
+11351561#744321#0	It's just everything...the food, the atmosphere...the incrediby kind and gracious hostess.	food	0	positive
+33070461#1496736#7	Having moved I truly miss this place.	food	4	none
+33068635#1533725#2	The food is very good and the service is great.	food	0	positive
+11313316#1234433#1	I usually get one the Vietnamese Beef Noodle Soup.	food	1	neutral
+33069925#747092#5	SUM IT: local investment bankers like it, try for yourself at least once.	food	4	none
+11359797#469087#1	I started going to dosa hut more after that.	food	4	none
+11661949#1709112#5	We were wondering why they were there to make our dining experience miserable?	food	4	none
+11351354#412616#2	Too bad, has a lot of potential.	food	4	none
+33069536#707145#0	This place has the best Indian food in New York, hands down.	food	0	positive
+33069536#707145#1	The waiters are very friendly and helpful and if you frequent they will remember you.	food	4	none
+35693081#540596#0	Intimate but charming interior with extremely friendly and attentive service.	food	4	none
+35393632#1591698#4	The food was as creative as the decor and both worked.	food	0	positive
+33009300#626261#0	Siam Square is fairly new to the neighborhood and I think in time will gain the recognition it deserves.	food	4	none
+33009300#626261#2	My first experience at Siam Square was very pleasant.	food	4	none
+33009300#626261#4	I have gone back to Siam Square many times since and everytime I am very satisfied overall.	food	4	none
+33009300#626261#5	The menu is great, with a good selection, and everything that I have tried is absolutely delicious.	food	0	positive
+35393630#1095759#0	We had our Christmas party at Dos Caminos and it was wonderful.	food	4	none
+11350539#680470#1	My personal favorite is Nick and Joe's.	food	4	none
+11350539#680470#3	The sauce is zesty and flavorful and the crust is nice and crispy.	food	0	positive
+33059931#926509#0	This place has the best sushi in the city.	food	0	positive
+33059931#926509#1	They have an excellent selection (the rolls with crab are really great).	food	0	positive
+11349871#518230#2	Everyone who works there (the host, the bartender, the servers) is so helpful.	food	4	none
+11349871#518230#3	And the food is fantastic.	food	0	positive
+11349871#518230#4	Favourites include: potato spinach gnocchi and the lamb.	food	0	positive
+32935583#854234#2	Another great thing about Glechik-everything is very cheap!	food	4	none
+33071731#1007204#0	Unfortunately, we chose this spot for lunch as we had done a lot of walking and ended up at the South St Seaport.	food	4	none
+32889544#0#3	But regulars know that the sandwiches are the real star here.	food	0	positive
+11351753#0#4	The skillfully chosen Portuguese cheese cart paired with quality port provides the perfect Iberian ending.	food	0	positive
+35084984#412657#1	My friend had a burger and I had these wonderful blueberry pancakes.	food	0	positive
+35084984#412657#2	We were so happy with our food and were even more thrilled when we saw the bill.	food	0	positive
+35084984#412657#3	I would definitely come back to this restaurant.	food	4	none
+15087705#871249#5	The place just isn't ready for prime time.	food	4	none
+33064221#427885#3	All toppings are so fresh you'd think they had their own vegetable garden and the crust is so perfect, that one actually thinks of how it was made.	food	0	positive
+11548230#560890#0	Quartino is my favoriate resturant in NYC.	food	4	none
+11548230#560890#2	We've always gotten amazing service and we love the food.	food	0	positive
+35700989#574718#1	The waitstaff is solicitous and friendly and always seems glad to see us, and the food is wonderful, if not stunningly creative.	food	0	positive
+35700989#574718#2	I'm in love with the lobster ravioli!	food	0	positive
+33070600#670328#1	My order is on my table even on a busy friday night within 10 minutes (at the most) of hanging up the phone.	food	4	none
+11639814#570590#0	We came across this restaurant by accident while at a DUMBO art festival and thoroughly enjoyed our meal.	food	0	positive
+11359618#788741#2	Service is excellent, no wait, and you get a lot for the price.	food	0	positive
+12036269#580745#3	I thought the food isn't cheap at all compared to Chinatown.	food	4	none
+32896473#439063#1	And you never get the feeling that you need to leave.	food	4	none
+33070601#438491#0	Coffee is a better deal than overpriced Cosi sandwiches.	food	4	none
+11661949#1709112#3	We didn't know if we should order a drink or leave?	food	4	none
+32894791#1611374#2	great neighbhorhood spot.	food	4	none
+34109476#402765#0	Bobb V's is a great place to take your Friends and Family!	food	4	none
+35693081#540596#3	) It's not the best Japanese restaurant in the East Village, but it's a pretty solid one for its modest prices, and worth repeat visits.	food	4	none
+32944714#1559783#1	The food is so good and so popular that waiting can really be a nightmare.	food	0	positive
+14336883#1094817#5	Here's the thing, you're in the best city in the world for restaurants.	food	4	none
+14336883#1094817#6	Go spend your money somewhere that really wows you.	food	4	none
+33059678#631861#2	The crowd was older and the restaurant is very cramped, but it has old school charm.	food	4	none
+32894966#1727613#1	This is a real gem of a place.	food	4	none
+32894966#1727613#9	I think this a a wonderful place.	food	4	none
+11558693#1436895#1	First walking in the place seemed to have great ambience.	food	4	none
+35700731#1595671#0	I went to Kitchenette this weekend for brunch.	food	4	none
+32894963#1707639#0	This place doesn't get the publicity that Sylvias Soul Food restaurant does, but it should.	food	4	none
+14336883#1094817#7	Just because P Diddy had a party at Butter doesn't mean we should be automatically impressed.	food	4	none
+35819603#1613701#3	Even for two very hungry people there is plenty of food left to be taken home (it reheats really well also).	food	0	positive
+11350539#680470#8	Like I said, Nick and Joe's may not be everyone's favorite, but it's mine.	food	4	none
+35393632#1591698#6	The help was extremely nice and did not rush us.	food	4	none
+35714274#1076679#4	Then they somehow made a dry and burnt crust, around a raw and cold inside.	food	2	negative
+11351664#1238806#4	It's just good food, nothing more and that's all we want!	food	0	positive
+33070286#1133164#7	DON'T KNOW WHAT THE OTHERS ON THE BLOCK WERE LIKE BUT WE WERE PLEASED WITH OUR CHOICE.	food	4	none
+32936760#1397861#9	Average cake thats been courted by a LOT of hype.	food	2	negative
+11349654#424016#1	It's cute and simple and I loved it.	food	4	none
+33068517#482841#0	My wife and I recently visited the bistro for dinner and had a wonderful experience.	food	4	none
+11351400#495795#1	THE SERVICE IS PERFECT TOO  NOTHING WRONG IN THIS ITALIAN/FRENCH RESTAURANT	food	4	none
+11313431#524365#0	My fiance and I recently wanted to see the city and deceided to take a dinner cruise.	food	4	none
+11546184#1465600#1	The $72 Delmonico steak had to be sent back because it was not cooked to order.	food	2	negative
+11482070#503858#1	Everytime I go there I can't pick anything to eat and not because the menu is filled with great things to eat.	food	2	negative
+11349922#547169#3	Half a chicken with a mountain of rice and beans for $6.25.	food	4	none
+32894483#1088884#0	The service is really fast and friendly, and the value is great.	food	4	none
+32944674#542988#0	We were very impressed with the food and value.	food	0	positive
+32944674#542988#2	You must try the garlic soup!	food	0	positive
+32896492#738746#0	Casablanca servces delicious falafel, tabouleh, humus and other Mediterranean delights, which are all very inexpensive.	food	0	positive
+11313290#1139539#0	Even after a few bad evenings at Bardolino, I keep coming back.	food	4	none
+33069847#1306433#1	The pizza's are made fresh, crispy, and ready to serve.	food	0	positive
+32893609#708406#3	There are many french bistros in the midtown area, and I wholheartedly recommend this one.	food	4	none
+35709451#1061726#1	Staff is accomodating make sure you are satified.	food	4	none
+11359727#487554#4	Chef Waldy's always measures up.	food	0	positive
+35709337#1579632#5	This diamond in the ruff is definitely worth my 10-minute walk from the 6 train.	food	4	none
+11350660#564640#0	Being a vegan myself, I've made a point of trying all the vegan restaurants in Manhattan--and Zen Palate is easily my favorite.	food	4	none
+35819603#1613701#0	Don Pedro's is one of my favorite restaurants.	food	4	none
+33059931#926509#2	Reasonably priced with very fresh sushi.	food	0	positive
+35819603#1613701#2	Go for the Seafood Paella for two.	food	0	positive
+35819603#1613701#4	All of the apetizers are good and the Sangria is very good.	food	0	positive
+13383936#420974#0	Cantinetta is a real treasure in a see of mediocre Italian restaurants.	food	4	none
+11558693#1436895#7	The one positive thing I can say is that the service was prompt, we got seated right away and the server was very friendly.	food	4	none
+33009300#626261#3	The staff greeted me warmly at the door and I was seated promptly and the food was excellent.	food	0	positive
+11350539#680470#0	Whether one pizza place is better than another is often very subjective.	food	4	none
+35819603#1613701#5	Really nice restaurant to go with a group or on a date.	food	4	none
+35819603#1613701#6	Service is usually pretty good.	food	4	none
+35708055#673129#4	Host and Hostess was quite rude.	food	4	none
+35708055#673129#7	You will not be missing anything.	food	4	none
+32878835#503761#0	I discovered Applebees when I went away to college in VA.	food	4	none
+11351453#683961#0	the wait staff is very friendly, if your not rude or picky.......our meal at Leon last weekend was great -.	food	0	positive
+11351453#683961#1	I recommend any of their salmon dishes......	food	0	positive
+11351451#805713#1	The foie gras was sweet and luscious.	food	0	positive
+11351324#0#2	The menu, which changes seasonally, shows both regional and international influences.	food	1	neutral
+11624981#549489#5	but their mac cheese was YUMMY!	food	0	positive
+11624981#549489#6	their brunch menu had something for everyone.	food	0	positive
+11624981#549489#7	jazz singer had a nice voice + she made us all get up to dance to shake some cals to eat some more.	food	4	none
+15069510#648179#0	I often find myself with time to kill in Times Square, which is a shame since I don't love this area.	food	4	none
+15069510#648179#2	They have very quick service which is great when you don't have much time.	food	4	none
+15069510#648179#3	The food is average: breakfast food, soups, salads, sandwiches, etc.	food	1	neutral
+11519527#1541586#1	I WAS HIGHLY DISAPPOINTED BY THE FOOD.	food	2	negative
+11519527#1541586#3	THE BANANA PUDDING THEY SERVE HAS NEVER SEEN AN OVEN,THE CRABCAKES ARE WAY OVER SALTED AND DON'T GET ME STARTED ON THE VERY GREASY MAC AND CHEESE.	food	2	negative
+35759841#1360876#1	The staff is arrogant, the prices are way high for Brooklyn.	food	4	none
+35759841#1360876#0	This place is average... at best.	food	4	none
+11639667#1085238#2	the service is prompt friendly.	food	4	none
+11639667#1085238#6	Whatever the reason it is definitely the place to be.	food	4	none
+32464595#574909#0	This is literally a hot spot when it comes to the food.	food	0	positive
+32892297#645108#0	The downstairs bar scene is very cool and chill...	food	4	none
+32892297#645108#1	The food was definitely good, but when all was said and done, I just couldn't justify it for the price (including 2 drinks, $100/person)...	food	0	positive
+32950061#1264345#0	I've come here for casual lunches as well as for a friend's birthday and I always enjoy myself.	food	4	none
+35393630#1095759#2	If you are a Tequila fan you will not be disappointed.	food	0	positive
+11660930#655010#5	Great beer selection too, something like 50 beers.	food	0	positive
+35695422#1464305#0	After reading the great reviews, I invited a die-hard downtown friend of mine to join me at TASTE.	food	4	none
+11359613#884374#3	Not to sound too negative but be wary of the delivary.	food	4	none
+35390182#756337#7	Feels like family when we go there.	food	4	none
+13383936#420974#1	I found the food to be just as good as its owner, Da Silvano, just much less expensive.	food	0	positive
+11484031#1129679#3	They have homemade pastas of all kinds -- I recommend the gnocchi -- yum!	food	0	positive
+14336883#1094817#3	My vegetable risotto was burnt, and infused totally in a burnt flavor.	food	2	negative
+35695422#1464305#1	What a pleasant surprise!	food	4	none
+32935729#785247#8	The main draw of this place is the price.	food	4	none
+35390148#588852#4	How can hope to stay in business with service like this?	food	4	none
+32405935#675215#1	But dinner here is never disappointing, even if the prices are a bit over the top.	food	0	positive
+32895093#418997#1	Not only did they have amazing, sandwiches, soup, pizza etc, but their homemade sorbets are out of this world!	food	0	positive
+35393630#1095759#1	the homemade Guacamole, the unbelievable entree, and thee most amazing deserts.	food	0	positive
+11461396#699654#0	The sushi is reasonably priced and fresh.	food	0	positive
+32485393#1022496#1	It's no-fuss, fast and delicious.	food	0	positive
+35869867#649564#3	Save room for deserts - they're to die for.	food	0	positive
+32408649#945413#2	Best things to order are from the grill (Churrasco and Ribs).	food	0	positive
+35196520#758440#0	The traditional Italian items are great - cheap and served in a cozy setting.	food	0	positive
+33085669#409731#7	Whether your choose the iced blended mocha or the hot white mocha you are sure to be extremely happy.	food	0	positive
+33068909#1189415#1	last Tuesday for a late lunch with a friend.	food	4	none
+32891589#573560#3	It was delish and I didn't feel bad eating it.	food	0	positive
+32894416#1193614#4	Another friend had to ask 3 times for parmesan cheese.	food	4	none
+35177381#521555#1	Our waitress had apparently never tried any of the food, and there was no one to recommend any wine.	food	4	none
+15094232#1295193#3	The service was a bit slow and the portions are a bit small so if you are hungry and in a rush, this is not the place for you.	food	2	negative
+11313431#524365#4	No doubt the next time we want to go out for a special occasion or are entertaining guests from out of town, Spirit and Bateaux will be our destination.	food	4	none
+11538980#453602#2	i would recommend Jewel Bako if you want to feel like you were kicked in the groin and had to pay for it too.	food	4	none
+11302357#835238#2	The ambiance was pretty cool, but not worth the hassle.	food	4	none
+33071731#1007204#4	The unfortunate lady next to us thought she had ordered a salad (including asking for salad dressing) and was instead given a quesedilla.	food	4	none
+33069847#1306433#0	El Nidos one of the best restaurants in New York which I've ever been to, has a great variety of tasty, mouth watering pizza's.	food	0	positive
+11302357#835238#1	The service was pretty poor all around, the food was well below average relative to the cost, and outside there is a crazy bum who harasses every customer who leaves the place.	food	2	negative
+35709451#1061726#4	Although I moved uptown I try to stop in as often as possible for the GREAT cheap food and to pay the friendly staff a visit.	food	0	positive
+35701425#1155856#4	I had to wait for my friend at the bar for a few minutes	food	4	none
+35816071#637243#1	Chef Vincenzo, always there if you need him, is a real talent and a real Roman.	food	0	positive
+33069536#707145#4	If you're looking to taste some great Indian food and want good service, definitely visit Curry Leaf.	food	0	positive
+32935583#854234#1	You must try Odessa stew or Rabbit stew; salads-all good; and kompot is soo refreshing during the hot summer day (they make it the way my mom does, reminds me of home a lot).	food	0	positive
+36220672#1714981#2	My daughter and I left feeling satisfied (not stuffed) and it felt good to know we had a healthy lunch.	food	0	positive
+11447227#436718#0	I'm almost tempted to give this place a bad review so I can keep the crowds away...been going there on and off for a year now and it's really my fave hang out in the city.	food	4	none
+33071731#1007204#5	When she complained, the waitress said, Sorry.	food	4	none
+35158451#1089920#4	The quality of the meat was on par with your local grocery store.	food	2	negative
+32894966#1727613#2	They specialize in smoothies and fresh juices.	food	0	positive
+35714274#1076679#3	It first came well done, and I politely sent it back.	food	2	negative
+11351587#1488758#7	I recommend the black roasted codfish, it was the best dish of the evening.	food	0	positive
+11359790#823900#3	The manager then told us we could order from whatever menu we wanted but by that time we were so annoyed with the waiter and the resturant that we let and went some place else.	food	4	none
+33068664#1164940#0	In mi burrito, here was nothing but dark chicken that had that cooked last week and just warmed up in a microwave taste.	food	2	negative
+11624981#549489#10	during busy hrs, i recommend that you make a reservation.	food	4	none
+35759841#1360876#3	Don't waste your time or your money.	food	4	none
+32894267#698671#3	it's good but, like the movie is never as good as the book, this is same analogy.	food	4	none
+11624981#549489#9	it was a very warm experience.	food	4	none
+35084984#412657#0	I went to Common Stock for brunch and I was so impressed.	food	4	none
+33069925#747092#0	now called nikki sushi, sushi is OK.	food	1	neutral
+33069536#707145#2	The food is also outstanding and is served quite quickly.	food	0	positive
+11351561#744321#1	I just have nothing to say about this place that is negative except that it's not a cheap night out...but it's SO worth it.	food	4	none
+35709337#1579632#1	From the erbazzone emiliana to the mostarda on the cheese plate, the dishes at this restaurant are all handled with delicate care.	food	0	positive
+33066089#490193#3	The food is delicious and the bar has a great vibe.	food	0	positive
+32894267#698671#1	expectations were real hi reading the '10's'.	food	4	none
+32892130#435512#2	There's candlelight and music.	food	4	none
+32938828#1194079#0	It's nice to find a place that is open 24 hours (especially in downtown Brooklyn).	food	4	none
+32935729#785247#11	Simple healthy unglamorous food cheap.	food	0	positive
+35869867#649564#0	It was such a fantastic dining experience, that I returned again the same week.	food	4	none
+11359613#884374#6	To be fair, the food still is good and the service is quick and attentative even though its usually very busy.	food	0	positive
+35700731#1595671#1	The place is absolutely adorable and the food is delicious.	food	0	positive
+11558693#1436895#5	I ordered the Chicken Teriyaki and my husband got Garlic Shrimp.	food	1	neutral
+11558693#1436895#0	I've had better Japanese food at a mall food court.	food	2	negative
+32894966#1727613#10	The staff members are extremely friendly and even replaced my drink once when I dropped it outside.	food	4	none
+11359717#1138929#0	Cool atmosphere but such a let down.	food	4	none
+32938222#1552119#3	The Sashimi portion are big enough to appease most people, but I didn't like the fact they used artifical lobster meat.	food	3	conflict
+32891589#573560#1	They have wheat crusted pizza made with really fresh and yummy ingredients.	food	0	positive
+33070309#423221#0	Had a lovely dinner in this dedicated seafood joint, food was well-prepared and -presented and the service was pleasant and prompt.	food	0	positive
+32936760#1397861#7	the icing MADE this cake, it was fluffy, not ultra sweet, creamy and light.	food	0	positive
+32936760#1397861#5	Finally let into the store 5 at a time, to buy expensive slices from a harried staff.	food	4	none
+33085939#758010#1	We ended up having to just leave because we were essentially being ignored by the wait staff--even though the rest of the restaurant was largely empty.	food	4	none
+11351664#1238806#5	The wine list is extensive, well priced and covers alot of regions.	food	0	positive
+33068890#423889#0	Go here if you want fresh and tasty salads of any type you can imagine.	food	0	positive
+36244423#1058258#4	Everything about this place is adorable - even the bathroom!	food	4	none
+32893040#1716582#1	Speedy delivers, great food, decent prices, and friendly service combine to ensure an enjoyable repast.	food	0	positive
+33070286#1133164#3	THEY HAVE WAITERS ON THE SIDEWALK TRYING TO PULL YOU IN WHICH MADE US SUSPICIOUS.	food	4	none
+33070286#1133164#1	IT WAS OUR ONLY OPPORTUNITY TO VISIT AND WANTED AN AUTHENTIC ITALIAN MEAL.	food	4	none
+32897564#894393#0	It took 100 years for Parisi to get around to making pizza (at least I don't think they ever made it before this year)...but it was worth the wait.	food	0	positive
+35714274#1076679#2	I asked for a simple medium rare steak.	food	1	neutral
+35509422#0#3	Generously garnished, organic grilled burgers are the most popular dish, but the Jerusalem market-style falafel wraps and Mediterranean salads--layered with beets, goat cheese and walnuts--are equally scrumptious.	food	0	positive
+11302357#835238#3	Probably my worst dining experience in new york, and I'm a former waiter so I know what I'm talking about.	food	4	none
+32936760#1397861#6	Result (red velvet): Great texture, soft and velvety, nice hint of cocoa.	food	0	positive
+11359762#927332#4	Ask for the round corner table next to the large window.	food	4	none
+32891589#573560#4	Their twist on pizza is heatlhy, but full of flavor.	food	0	positive
+11350033#1264371#1	The lack of AC and the fact that there are a million swarming bodies (although everyone is polite and no one is pushing) is a slight turn off.	food	4	none
+11351328#1638529#0	I love the Little Pie Company as much as anyone else who has written reviews, but must discourage anyone from visiting the Grand Central location due to their RUDE service from two sales people.	food	4	none
+33009300#626261#1	Unfortunately, unless you live in the neighborhood, it's not in a convenient location but is more like a hidden treasure.	food	4	none
+35708055#673129#1	Didn't seem like any effort was made to the display and quality of the food.	food	2	negative
+11351628#404492#1	The food--though mostly deep-fried--is simple and satisfying.	food	0	positive
+11548230#560890#1	We live in the neighborhood and have been going there twice a week since the day they first opened.	food	4	none
+32935583#854234#0	Glechik might be way too tiny for a restaurant by Russian standards, but it is cozy and the food is simply GREAT.	food	0	positive
+11639814#570590#1	The food was excellent - authentic Italian cuisine made absolutely fresh.	food	0	positive
+11313359#650269#4	At night the atmoshere changes turning into this hidden jewel that is waiting to be discovered.	food	4	none
+11351814#1650882#5	The other times I've gone it's romantic date heaven, you can walk in get a booth by the windows, be treated like a VIP in a not-crowded place, with great food and service.	food	0	positive
+33070601#438491#1	I would only go for the coffee which is way better than Starbucks or the like.	food	0	positive
+11359797#469087#0	I used to be a regular costumer at pongal until dosa hut opened right next door to it.	food	4	none
+11651065#413029#2	Somewhat disappointing wine list (only new vintages.	food	2	negative
+33059678#631861#4	Both were very good, but nothing you couldn't get at similar restaurant.	food	4	none
+11639261#426600#0	If your looking for nasty high priced food with a dash of ghetto scenery cheap BX A$$ this is the place to be!!	food	2	negative
+33069925#747092#1	new hamburger with special sauce is ok - at least better than big mac!	food	3	conflict
+35196520#758440#1	Perfectly al dente pasta, not drowned in sauce -- generous portions.	food	0	positive
+12036269#580745#6	I can understand the prices if it served better food, like some Chinese restaurants in midtown/uptown area.	food	2	negative
+15087705#871249#2	Service was awful - mostly because staff were overwhelmed on a Saturday night.	food	4	none
+35693216#1233439#3	To the owners; good job guys, this place is a keeper!	food	4	none
+35692932#1064131#2	and the owner is simply lovely and friendly.	food	4	none
+11484031#1129679#0	This little place is wonderfully warm welcoming.	food	4	none
+33106326#864352#4	perfect for a quick meal.	food	4	none
+35709451#1061726#0	Has the warmth of a family local yet it is a great place to watch sporting events.	food	4	none
+11351762#644011#3	The service was great, and they have a whole great deal for birthdays.	food	4	none
+36244423#1058258#1	The staff is 100% Italian and the food is as authentic as it gets.	food	0	positive
+11350496#1560668#4	My only complaint might be the fortune cookies - I've never had a cookie predict bad luck for me before I visited Kar.	food	4	none
+11461396#699654#3	Good for a quick sushi lunch.	food	4	none
+11464789#378665#2	Have a mojito and sit in the back patio.	food	0	positive
+11351513#832512#2	The service was dreadfully slow (the place was only half full) and a smile would have been nice...	food	4	none
+11408372#630381#0	I went this past Saturday and had a excellent meal of consisting of a braised lamb shank with mashed potatoes.	food	0	positive
+32894669#1075584#2	The waitress came by to pick up the soy sauce WHILE we were eating our lunch!!!!!	food	4	none
+11661949#1709112#2	So we sat at the bar, the bartender didn't seem like he wanted to be there.	food	4	none
+32933228#1700177#1	I reccomend the fried pork dumplings, the orange chicken/beef, and the fried rice.	food	0	positive
+11359762#927332#0	You will not be dissapointed by any of the choices in the menu.	food	0	positive
+35709275#573688#1	The french fries -- with the kalmata dip were terrific!	food	0	positive
+11349845#1188496#0	Would you ever believe that when you complain about over an hour wait, when they tell you it will be 20-30 minutes, the manager tells the bartender to spill the drinks you just paid for?	food	4	none
+11313359#650269#5	The boutique selection of wines covers a wide variety without being imposeing.	food	1	neutral
+35693136#561234#4	If you're lucky and there's not a private party going on back there, you'll get a chance to really chill out.	food	4	none
+32896492#738746#2	They also have a great assortment of wraps if your not in the mood for traditional Mediterranean fare.	food	0	positive
+11351816#1162694#1	Fresh veggies, all sorts of middle eastern spreads, cheese and falafel, soup, fish, rice, root vegetables, a rice medley, some spinach thing, lamb kebabs, cheese baclava... soooo much fooood, and all of it delicious.	food	0	positive
+32405935#675215#2	Disappointingly, their wonderful Saketini has been taken off the bar menu.	food	3	conflict
+35668286#0#0	In Short The Black Sheep distinguishes itself from the Midtown pub herd with a look that's a mix of sports-bar butch and ornate kitsch.	food	4	none
+11350031#590790#3	I would definitely go back -- if only for some of those exotic martinis on the blackboard.	food	0	positive
+32469157#1273114#2	They are located off the beaten path but are certainly worth the trip.	food	4	none
+33060905#1138585#2	then she made a fuss about not being able to add 1 or 2 chairs on either end of the table for additional people.	food	4	none
+35693216#1233439#1	The happy hour is so cheap, but that does not reflect the service or the atmosphere.	food	4	none
+33068909#1189415#2	After waiting for almost an hour, the waiter brusquely told us he'd forgotten to give the kitchen our order.	food	4	none
+33070383#592089#0	With all the mundane or mediocre places on 8th avenue it is nice to have one that is a step above in quaility and atmosphere.	food	4	none
+32889544#0#0	A mix of students and area residents crowd into this narrow, barely there space for its quick, tasty treats at dirt-cheap prices.	food	0	positive
+35698240#574381#4	Give it a try, menu is typical French but varied.	food	1	neutral
+33064238#563983#1	It gets crowded at lunchtime but there are lots of seats in back and everyone who works there is so nice.	food	4	none
+11651065#413029#3	but for the value, it was a great affordable spot to enjoy a fun night out with small group.	food	4	none
+36216551#1233442#1	the negative reviews on city search are probably from jealous competing restaurants who realize they can't compete with Temple's entire positive attitude about the proper way to treat their customers and deliver top quality food.	food	0	positive
+11351725#582163#4	We ordered a glass of wine and were finished eating and paying before the wine came.	food	1	neutral
+35720486#684689#0	It was good, but none of the flavors WOW.	food	3	conflict
+32938222#1552119#4	Overall, this is a nice place to take a few friends to hang out at and the service is excellent.	food	4	none
+32408649#945413#3	Food is excellent quality for a good restaurant price.	food	0	positive
+11661949#1709112#4	Actually, everyone who worked there seemed to be annoyed.	food	4	none
+33106326#864352#1	for about eleven bucks you get a gigantic burrito (or tacos), margarita, and dessert.	food	0	positive
+11351622#0#1	The space is traditional in feel.	food	4	none
+33060905#1138585#1	the restaurant was completely empty, but she gave me a dirty look and asked, no reservations?	food	4	none
+11538980#453602#1	the food was mediocre to be kind - the interior is small and average - the owners are a tag-team of unpleasantries - so rude and snotty i actually let out a hearty guffaw whilst dining.	food	2	negative
+35196527#481646#3	Good service, great food, good value, and never have to wait in line!	food	0	positive
+35743460#0#3	Offerings like hot cakes and the Egg McMuffin sandwich are available for breakfast.	food	1	neutral
+36072604#1106889#0	I have been going to this restaurant for years, in the past the service was average and the food inconsistant.	food	2	negative
+11567247#1415594#2	The music was fascinating, but left room for conversation, and the bartender made superb drinks.	food	0	positive
+33070605#1232775#3	rice dishes and noodle dishes rarely exceed $5 and add on a refreshing ice drink for $2 and you're set for the night!	food	0	positive
+32899414#512291#3	Cuisine is billed as asian fusion - doesn't meet the bill.	food	2	negative
+11351622#0#3	Creative dishes like king crab salad with passion fruit vinaigrette and fettuccine with grilled seafood in a rosemary-orange sauce are unexpected elements on an otherwise predictable bistro menu.	food	0	positive
+35170181#0#3	"Dishes denoted as ""Roy's Classics"" (marked on the menu with asterisks) are tried-and-true recipes, such as macadamia-crusted mahi mahi, or subtly sweet honey-mustard beef short ribs."	food	0	positive
+32893040#1716582#4	The cold sesame noodles, which are a freebie when you order $10+, are delectable.	food	0	positive
+35177381#521555#0	I came to fresh expecting a great meal, and all I got was marginally so-so food served in a restaurant that was just so freezing we couldn't enjoy eating.	food	2	negative
+35886114#1249751#0	The lone argentine chorizo appetizer at $8.95 was a heavy fennel flavored Italian sausage like the ones that sell for $2.99/lb at the store.	food	2	negative
+33059678#631861#0	I went to Swiftys with some friends of the family and we had a very nice dinner, but nothing amazing.	food	4	none
+32867472#663531#2	Best Chinese on the Upper East, prompt delivery, good value.	food	4	none
+32894966#1727613#8	Most of the sandwiches are made with soy mayonaise which is actually pretty good.	food	0	positive
+33060905#1138585#0	i went in one day asking for a table for a group and was greeted by a very rude hostess.	food	4	none
+35196527#481646#4	It's worthwhile to take a cab to Chelsea just for an awesome dinner at My Chelsea.	food	4	none
+35709337#1579632#2	Not only is the food authentic, but the staff here are practically off-the-boat, they are young and hip and know what they are doing when it comes to food and wine.	food	0	positive
+35938288#666236#1	It has good music, nice tapas, an interesting selection of wines (primarily Spanish) and a lowkey hip neighborhood clientele.	food	0	positive
+32867472#663531#1	The food is great, I love their dumplings, cold sesame noodles, chicken and shrimp dishs.	food	0	positive
+11484031#1129679#2	And the food, well the food will keep you coming back.	food	0	positive
+11351819#985076#2	Waiting three hours before getting our entrees was a treat as well.	food	4	none
+15069510#648179#4	It's the conversations that make this a fun place to be.	food	4	none
+11351451#805713#2	My gf's duck confitte was very solid as well, although i have little base of reference.	food	0	positive
+35695422#1464305#2	The wine list was superb, our tapas delightful, and the quiet atmosphere perfect for good conversation.	food	0	positive
+11313316#1234433#3	You can eat gourmet food at a fast food price.	food	0	positive
+11417054#1062693#1	I've eaten at all three locations and I always love, love the food, the service is always wonderful and the prices are really reasonable.	food	0	positive
+35693083#822138#0	Not because I was pregnant, but the food here is always delicious.	food	0	positive
+11351625#909535#0	Had a great meal there this weekend before heading to the movies!	food	0	positive
+15094232#1295193#0	We had a birthday party here recently and the food and service was amazing.	food	0	positive
+35171678#484493#1	the dinner menu offers a variety of great entrees, including fresh seafood and huge steaks, there's also a couple of non-meat alternatives.	food	0	positive
+11482070#503858#0	This place has the strangest menu and the restaurants tries too hard to make fancy food.	food	2	negative
+32443281#959917#3	The appetizers are ok, but the service is slow.	food	1	neutral
+11359717#1138929#5	the food - not worth the price.	food	2	negative
+11302357#835238#0	What can you say about a place where the waitress brings out the wrong entree, then verbally assaults your 80 year old grandmother and gives her lip about sending it back (which she did politely, by the way).	food	4	none
+11351762#644011#2	The prices are not terrible.	food	4	none
+33071731#1007204#6	15% gratuity automatically added to the bill.	food	4	none
+35177381#521555#3	The halibut cheek appetizer came with a generous portion of foie gras, but that's about the only positive thing I can say about the meal.	food	3	conflict
+33061445#591371#3	Food is excellent and they also have empenadas and plaintains which are good for an afternoon snack.	food	0	positive
+13383936#420974#3	Both a number of the appetizer and pasta specials were amazing.	food	0	positive
+35743460#0#2	All-time favorites include the Big Mac, Chicken McNuggets, Filet-O-Fish sandwich and McDonald's famous french fries; lighter options like entree-sized salads are also available.	food	0	positive
+11351451#805713#4	Although somewhat loud, the noise was minimally intrusive.	food	4	none
+11350539#680470#2	It's a basic pizza joint, not much to look at, but the pizza is what I go for.	food	0	positive
+35393632#1591698#3	Tables are close, so you better be comfortable bumping elbows with other patrons.	food	4	none
+32894522#1633452#0	Was her Monday for lunch - was working on a film in the area - and found this rare jewel.	food	4	none
+11359767#969393#1	Not too much so, but enough that there's a great scene.	food	4	none
+32864873#471207#0	You feel like you made it to New York when you eat here.	food	4	none
+11432316#715219#1	We'd walked by it dozens of times and finally settled on a Monday night.	food	4	none
+32894267#698671#6	SUM IT: don't read the '10's' reviews, try it to judge for yourself so you won't have as hi expectations, then you'll be sure to enjoy it.	food	4	none
+11661949#1709112#1	We went there, no one greeted us.	food	4	none
+35668126#536759#4	Dug the blue bar area too.	food	4	none
+35391416#500259#3	We spent so much time getting elbowed around while we waited we left.	food	4	none
+35390148#588852#0	I got the opportunity to dine at your establishment again a few weeks ago, I was in your upstrairs dining area.	food	4	none
+35509422#0#4	Meat-phobes are in luck with the extraordinary veggie burger, made from a distinctive blend of chickpeas, carrots and other vegetables and spices.	food	0	positive
+11351521#768768#1	At peak times, the restaurant is overcrowded and tables are uncomfortably close.	food	4	none
+35158410#1207085#3	The service was on point - what else you would expect from a Ritz?	food	4	none
+11351399#0#7	Menus feature seasonal picks, like sweet corn-foie gras brulee.	food	1	neutral
+11351399#0#6	Innovations are just as assured, from the simple Carinthia cheese ravioli with wild mushrooms to the caviar-topped sturgeon, beautifully matched with a bright green spinach-vodka sauce.	food	0	positive
+32894522#1633452#3	And these are not small, wimpy fast food type burgers - these are real, full sized patties.	food	0	positive
+32896492#738746#1	There restaurant is very casual, but perfect for lunch, and their delivery service is always very fast.	food	4	none
+12036269#580745#4	Chinatown definitely has better quality with cheaper prices.	food	0	positive
+11351328#1638529#4	I had to flag down a third staff person for a fork... so now it's goodbye Little RUDE Pie Company.	food	4	none
+11651063#1217842#1	I have been in NYC for over 10 years and could not find this delicacy east of the Hudson .	food	4	none
+33068734#650934#1	Go with the specials, and stay away from the salmon. 	food	3	conflict
+33068734#650934#2	The pastas were pretty good.	food	0	positive
+33068734#650934#3	Atmosphere is a bore.	food	4	none
+33070532#604874#0	The decor is what initially got me in the door.	food	4	none
+11351745#499992#0	The wait staff was very attentive and polite.	food	4	none
+35717889#579150#0	Great restaurant, and even greater food!	food	0	positive
+35717889#579150#1	The dishes are remarkably tasty and such a cozy and intimate place!	food	0	positive
+35717889#579150#2	Save room for the desserts! ;-)	food	0	positive
+11351682#1496136#0	I love the simplicity and respect which was given to the food, as well the staff was freindly and knowledgable.	food	0	positive
+11504679#821993#0	Service was good and so was the atmosphere.	food	4	none
+11504679#821993#1	MY date and I both ordered the Branzini and both felt the fish was very average.	food	2	negative
+11349760#848056#0	We were there March 7 and found Maison very nice.	food	4	none
+11349760#848056#1	The food was good, the service prompt, and the price very reasonable. 	food	0	positive
+35704115#614067#0	Wonderful menu, warm inviting ambiance, great service the FOOD keeps me coming back!	food	0	positive
+33061498#586991#0	Great food, good wine and an excellent host.	food	0	positive
+35870558#793384#0	went there last night with my coworker.	food	4	none
+11313392#560011#1	Pizzas were excellent in addition to appetizers and main courses.	food	0	positive
+11313392#560011#2	Definitely try the calamari, any pasta, or even the Sliced steak entree.	food	0	positive
+11513049#499488#4	The caeser salad was great.	food	0	positive
+11513049#499488#5	The fried calamari was even better!	food	0	positive
+11513049#499488#8	The atmosphere was nice but it was a little too dark.	food	4	none
+11513049#499488#0	The food was good overall. 	food	0	positive
+11660480#640405#1	The food was outstanding and the service was tops.	food	0	positive
+35682567#1590699#1	The portions are very large and the service is fantastic!!	food	0	positive
+35682567#1590699#2	I recomend the chicken milanese.	food	0	positive
+35698333#556353#0	excellent tapas at great prices, romantic, small but not overly crowed, excellent	food	0	positive
+33072753#1351349#2	The service is a quite slow, but friendly.	food	4	none
+33072753#1351349#0	The chocolate raspberry cake is heavenly- not too sweet, but full of flavor.	food	0	positive
+11651310#581605#1	Our waiter was helpful and charming, the food was perfect, and the wine was good, too.	food	0	positive
+11651310#581605#0	Alias is warm and cozy and you don't get that squished-in feeling you get at 71 Clinton.	food	4	none
+11610050#517598#0	I HAVE NEVER HAD A BAD MEAL(OR BAD SERVICE )@ PIGALLE.	food	0	positive
+35739302#844266#0	Best hot dogs in the tri-state area.	food	0	positive
+11654405#719617#0	This is a typical example of an establishment in which its owners do not know anything about the restaurant business!	food	4	none
+11654405#719617#5	I would not recommend MEET at all, it is a rip off all the way from the time to step in!	food	4	none
+11563005#745685#0	Went there for a special celebration.	food	4	none
+11563005#745685#1	The restaurant was quiet and intimate.	food	4	none
+11563005#745685#2	The service was very attentive and very generous.	food	4	none
+11563005#745685#3	We had tons of great food, wine, and desserts.	food	0	positive
+11563005#745685#4	Really Lovely dining experience in the midst of buzzing midtown area.	food	4	none
+11570675#1355721#0	OK, I've been to Dumont a few times now.	food	4	none
+11570675#1355721#1	The food really isn't very good and the service is terrible.	food	2	negative
+11570675#1355721#2	Maybe it's that most of Dumont's patrons are younger and have lower expectations, but I cannot recommend Dumont.	food	4	none
+11463275#424927#1	Not only do they have the best escargot in town,they always try to accomodate our toddler.	food	0	positive
+11408946#789662#0	I've been to Sotto Voce several time, and I have to say this one place that hits the nail right on the head ever time!	food	4	none
+11408946#789662#1	Between my guest and I, we sampled at least 80% of the menu, and they were all hits.	food	0	positive
+11408946#789662#3	The Deco and ambiance was really romantic.	food	4	none
+32444534#501179#1	This is the best unknown restaurant in and around New York.	food	4	none
+32444534#501179#2	Just go in and sample the greatest french food west of Daniel.	food	0	positive
+33068425#562449#1	For someone who used to hate Indian food, Baluchi's has changed my mid.	food	0	positive
+33068425#562449#3	Finally a curry that I can eat, enjoy and not suffer from gastritis from 3 hours later.	food	0	positive
+33068425#562449#5	All are GREAT - poori, naan, paratha all FRESH.	food	0	positive
+33068425#562449#4 	Try the homemade breads.	food	0	positive
+35703223#626682#0	This place has beautiful sushi, and it's delicious CHEAP. 	food	0	positive
+35703223#626682#1	It also has lots of other Korean dishes that are affordable and just as yummy.	food	0	positive
+11351741#1733901#0	I went for restaurant week and ordered off the prix fixe menu	food	1	neutral
+32857960#1320058#5	Not only was the waiter efficient and courteous, but also extremely helpful. 	food	4	none
+11351633#565247#3 	It took a bigger bite from my wallet than my appetite - I would not reccomend this to anyone that I would want to talk to me again!!	food	2	negative
+35701421#583735#2	This place is classy, chic, the service is warm and hospitable, and the food is outstanding.	food	0	positive
+35393743#526051#0	I read about this place in Time Out magazine.	food	4	none
+35393743#526051#2	It's a great find in Astoria.	food	4	none
+32864873#582572#0	Great burgers, grilled cheeses and french fries.	food	0	positive
+11351354#812637#0	The Yellowfin Tuna and Calf's liver are my favorites!	food	0	positive
+11538980#1053497#1	Sushi so fresh that it crunches in your mouth.	food	0	positive
+11538980#1053497#4	But make sure you have enough room on your credit card as the bill will leave a big dent in your wallet.	food	4	none
+11349654#424016#2	Despite the 5th ave address there are no frills whick I also love.	food	4	none
+35158410#1207085#2	They bring a sauce cart up to your table and offer you up to 7 or 8 choices of sauces for your steak (I tried them ALL).	food	0	positive
+15094232#1295193#2	Not only was the sushi fresh, they also served other entrees allowed each guest something to choose from and we all left happy (try the duck!	food	0	positive
+32894267#698671#5	good variety but nothing surprising.	food	3	conflict
+11351328#1638529#2	After I paid for my purchase, I noticed they had not given me utensils so I could eat my pie.	food	4	none
+11350539#680470#6	Likewise if you like really thin crust or really big slices then Nick and Joe's may not be your favorite.	food	2	negative
+11359764#1373169#2	It's always quiet because it's awful.	food	4	none
+33071731#1007204#2	No green beans, no egg, no anchovy dressing, no nicoise olives, no red onion.	food	2	negative
+32938896#0#2	Build a meal with side orders like Amazin' Greens salads, Buffalo Chicken Kickers and Cinna Stix.	food	1	neutral
+33070588#0#2	Thick fries, meaty chili and stuffed baked potatoes round out a menu that includes a cool, ultra-thick chocolate Frosty.	food	0	positive
+11482070#503858#2	I always find myself asking the waiter to make something bland and different than what is on the menu.	food	1	neutral
+32936760#1397861#8	Good cake BUT: it was not the best cake i've ever had, and definately not worth standing outside on the sidewalk being herded like cattle by indifferent and overworked employees.	food	3	conflict
+35720486#684689#1	The closest that I got was the Cherry Marscapone, but they were out of it that day.	food	1	neutral
+35719198#0#3	The homage to India is most evident in the delectable roti canai appetizer, a fried pancake served with pungent curry dipping sauce, while the mango chicken offers a surprisingly sophisticated, fresh take on sweet-and-sour.	food	0	positive
+33507331#1177339#1	It doesn't look like much on the outside, but the minute you walk inside, it's a whole other atmosphere.	food	4	none
+35693214#539116#0	I have to say the place was awesome.	food	4	none
+32935729#785247#3	The ground chickpea soup we sampled as a starter tasted somewhat thin.	food	2	negative
+35709141#1107179#3	We requested they re-slice the sushi, and it was returned to us in small cheese-like cubes.	food	2	negative
+11351354#412616#1	The service, however, is a peg or two below the quality of food (horrible bartenders), and the clientele, for the most part, are rowdy, loud-mouthed commuters (this could explain the bad attitudes from the staff) getting loaded for an AC/DC concert or a Knicks game.	food	0	positive
+11349840#433070#8	If you're in the neighborhood, definitely stop by for a great meal.	food	0	positive
+11349840#433070#7	Unfortunately, with our show tickets, we didn't have time to sample any desserts.	food	1	neutral
+11313439#692431#1	The restaurant could use a little paint, but all in all a great sushi place!	food	4	none
+35391416#500259#5	Make more tables- perhaps a rooftop bar?	food	4	none
+32944704#492723#1	The decoration was feeling like we was on the Cairo, actually the street is part of that adventure.	food	4	none
+32950007#1320096#2	Although small, it has beautiful ambience, excellent food (the catfish is delicious - if ya don't mind it a lil salty) and attentive service.	food	0	positive
+11350033#1264371#3	I didn't go there for food so I can't comment.	food	4	none
+11660930#655010#2	My friends and I go once a week (minimum, we live in the area) and everytime can't resist walking out ready to burst.	food	4	none
+11660930#655010#4	Stick to the items the place does best, brisket, ribs, wings, cajun shrimp is good, not great.	food	0	positive
+35509422#0#0	Hip boutiques and bars on Ludlow add to the artsy, laid-back atmosphere at this Israeli-style takeout and eat-in burger joint.	food	4	none
+35509422#0#1	Young neighborhood trendies graze at the counter during the day, while chic, art-house drinkers with heavy doses of the munchies pile in late at night.	food	4	none
+35393632#1591698#0	Bring your date and a bottle of wine!	food	4	none
+33009300#626261#6	Not only is this the best Thai restaurant I have been to, but it also ranks as one of my favorite places to dine.	food	4	none
+11350539#680470#7	Don't be put off by another reviewers extremely negative review.	food	4	none
+35196527#481646#0	My Chelsea's impressive and creative menu includes modern, Westernized Japanese dishes such as Foie Gras Unagi Napolean, Jap style hamburger steak, spicy cod roe spaghetti, black cod with miso base, and rack of lamb in black truffle sauce, to name a few.	food	0	positive
+35816071#637243#2	His food is excellent (and not expensive by NYC standards- no entrees over $30, most appetizers $12 to 14).	food	0	positive
+11359613#884374#0	The food is consistant and good but how it got name Best Diner In Manhattan is beyond me.	food	0	positive
+11349840#433070#6	The pasta primavera was outstanding as well, lots of fresh veggies.	food	0	positive
+32894267#698671#4	don't get me wrong - sushi was good, just not fantastic.	food	0	positive
+35693083#822138#1	Being Puerto Rican I know a thing or two about flan and this place serves one of the best (I hope Mom doesn't read this!).	food	0	positive
+32927541#579582#0	Been to the one in Brooklyn for over 25 years, now I dont have to go over the bridge for the best pizza ....Hanx	food	0	positive
+11349536#778388#0	Had dinner here on a Friday and the food was great.	food	0	positive
+35700989#574718#3	We recently spent New Year's Eve at the restaurant, and had a great experience, from the wine to the dessert menu.	food	0	positive
+35709275#573688#2	Highly recommended...  As stated, I haven't dined *in* the restaurant but stopped by there to pick up takeout and it seems a very relaxing place; also, the bar looks nice.	food	4	none
+11351587#1488758#1	The ambiance was fine, a little loud but still nice and romantic.	food	4	none
+33069925#747092#3	but, the filet mignon was not very good at all cocktail hour includes free appetizers (nice non-sushi selection).	food	3	conflict
+11351725#582163#3	It took about 2 1/2 hours to be served our 2 courses.	food	4	none
+11359764#1373169#1	Who said go when the place is quiet during the day?	food	4	none
+35698351#821341#1	Can be a bit busy around peak times because of the size.	food	4	none
+11351360#1704700#0	I was on jury duty, rode my bike up Centre Street on my lunch break and came across this great little place with awesome chicken tacos and Hibiscus lemonade.	food	0	positive
+32894791#1611374#1	good place to hang out during the day after shopping or to grab a simple soup or classic french dish over a glass of wine.	food	1	neutral
+36072604#1106889#4	Very nice touch that very much fits the place.	food	4	none
+11350033#1264371#2	However, there is just something so great about being outdoors, in great landscaping, enjoying a casual drink that makes going to this place worthwhile.	food	4	none
+11567247#1415594#1	We were seated promptly in close proximity to the dance floor.	food	4	none
+11351521#768768#2	If you are here as a pre-show meal, hop in a cab and take the extra 10 minutes to go to the uptown location.	food	4	none
+11350033#1264371#5	A plus was the good mix of people in their twenties that provided for great eye-candy while I was there.	food	4	none
+11651065#413029#1	The comments about fried foods is correct (below) but the other dishes, including the lamb entree and many of the salads (avocado shrimp) were quite good.	food	3	conflict
+11349445#757796#4	It's best to go on a cold night with a close friend or a good book.	food	4	none
+11351816#1162694#2	Slow service, but when you're hanging around with groups of 10 or 20, who really notices?	food	4	none
+32897564#894393#1	The sauce is excellent (very fresh) with dabs of real mozzarella.	food	0	positive
+11349845#1188496#2	Don't ever bother - the drinks were awful, but it was the people who work there that really made this the worst experience at dining.	food	2	negative
+33070305#1312437#5	The room is a little plain, but it's difficult to make such a small place exciting and I would not suggest that as a reason not to go.	food	4	none
+11432842#416795#4	Prices even outside of restaurant week were great.	food	4	none
+35509422#0#2	A small, outdoor eating area makes for a private, comfortable space to study alone or meet up with friends.	food	4	none
+32408649#945413#0	Before the place didn't call my attention.	food	4	none
+35670845#1650649#3	And all the [female] servers are cute too, which is always nice.	food	4	none
+35170181#0#5	The best dessert, a chocolate and peanut butter tart, isn't particularly Hawaiian, but it's a small world when it comes to sweets.	food	0	positive
+11359619#487952#7	for an appetizer, their calamari is a winner.	food	0	positive
+32464595#574909#1	Satay is one of those favorite haunts on Washington where the service and food is always on the money.	food	0	positive
+11349536#778388#2	After dinner I heard music playing and discovered that there is a lounge downstairs.	food	4	none
+32408649#945413#1	But now that it's under new ownership and has been renovated, it looks great.	food	4	none
+35816071#637243#3	The room is a gorgeous, bi-level space and the long bar perfect for a drink.	food	4	none
+35390182#756337#2	Now we moved out of the state and every visit to NYC includes a stop here.	food	4	none
+11350142#1253117#2	Two complaints- their appetizer selection stinks, it would be nice to get some mozzarella sticks on the menu.	food	2	negative
+11464511#471981#2	I don't remember what we had; nothing was memorable.	food	4	none
+11351587#1488758#3	It is bland and nothing extrodinary.	food	2	negative
+32950061#1264345#3	I was especially impressed during the bday party when the waitstaff went above and beyond in helping me decorate and bring out a bday cake as well as offering prompt and friendly service to a 15 person party.	food	4	none
+32935729#785247#4	The chicken and falafel platters were nondescript combinations with fresh leaf salad.	food	1	neutral
+11359618#788741#0	Every time I visit NYC, I come here.	food	4	none
+35160930#774531#0	I've been coming here regularly since it opened, about 2 years ago.	food	4	none
+33085669#409731#2	The atmosphere takes you to that place, the place many dream of.	food	4	none
+11351628#404492#8	several times and put up with the waiters' bad manners, knowing that their job isn't easy.	food	4	none
+32896473#439063#0	The service is great (maybe even borderline nagging but at least you get attention), the desserts are excellent and the coffee is so very good...	food	0	positive
+11464511#471981#1	We were seated next to a couple whose kitchen was being renovated and we agreed since we're all foodies who eat out a lot - that this wasn't a place we'd return to.	food	4	none
+32899282#556036#1	They are served on Focacchia bread and are to die for.	food	0	positive
+32894966#1727613#3	While the smoothies are a little big for me, the fresh juices are the best I have ever had!	food	3	conflict
+32464601#418474#0	The food is just OKAY, and it's almost not worth going unless you're getting the pialla, which is the only dish that's really good.	food	3	conflict
+11432442#650772#2	The guac is fresh, yet lacking flavor, we like to add our fresh salsa into it.	food	3	conflict
+11313290#1139539#1	The new menu has a few creative items,they were smart enough to keep some of the old favorites (but they raised the prices), the staff is friendly most of the time, but I must agree with the person that wrote about their favorite words: No, can't, sorry..., boy, they won't bend the rules for anyone.	food	0	positive
+33061445#591371#0	It' only open for lunch but the food is so good!	food	0	positive
+33070383#592089#1	If you like seafood and/or Greek food you will love this place though it is not limited to just these things.	food	0	positive
+35668286#0#2	""" The menu includes pub fare--burgers, steaks and shepherds pie--and even a portabella lasagna for those black sheep known as ""vegetarians."	food	1	neutral
+35714274#1076679#1	How can they survive serving mediocre food at exorbitant prices?!	food	1	neutral
+11351725#582163#2	The food was mediocre and the service was severely slow.	food	1	neutral
+33060905#1138585#4	i have eaten here on a different occasion - the food is mediocre for the prices.	food	1	neutral
+35695422#1464305#5	I'm looking forward to going back soon and eventually trying most everything on the menu!	food	0	positive
+36220672#1714981#0	I just had my first visit to this place and can't wait to go back and slowly work my way through the menu.	food	4	none
+33068909#1189415#4	I asked repeatedly what the status of the meal was and was pretty much grunted at by the unbelievably rude waiter.	food	4	none
+33067279#1612676#0	I stopped by for some brunch today and had the vegan cranberry pancakes and some rice milk.	food	1	neutral
+33059931#926509#3	Weekends can get crowded, but still highly recommended.	food	4	none
+33061445#591371#2	It gets very crowded so I would suggest that you get their early.	food	4	none
+35709451#1061726#3	Sweet Irish bartender is always happy and able to bring a smile to my friends a my face.	food	4	none
+15069510#648179#5	I always find myself sitting next to someone in the theatre industry- interesting to hear ideas hashed out while having a quick bite to eat.	food	4	none
+32443281#959917#4	Its good to go there for drinks if you don't want to get drunk because you'll be lucky if you can get one drink an hour the service is so bad.	food	4	none
+11661949#1709112#8	Anyway, the owner was fake.	food	4	none
+35698240#574381#2	Owner is pleasant and entertaining.	food	4	none
+11350390#802808#3	I have never in my life sent back food before, but I simply had to, and the waiter argued with me over this.	food	2	negative
+11482070#503858#3	Although the restaurant itself is nice, I prefer not to go for the food.	food	2	negative
+11351628#404492#3	Creamy appetizers--taramasalata, eggplant salad, and Greek yogurt (with cuccumber, dill, and garlic) taste excellent when on warm pitas.	food	0	positive
