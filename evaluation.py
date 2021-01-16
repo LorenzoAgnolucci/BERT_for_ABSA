@@ -4,11 +4,11 @@ import numpy as np
 import argparse
 
 
-def get_dataset(path):
+def get_dataset(data_dir="data", dataset_type="sentihood"):
     original_sentences = []
     auxiliary_sentences = []
     labels = []
-    data = pd.read_csv(path, header=0, sep="\t").values.tolist()
+    data = pd.read_csv(f"{data_dir}/{dataset_type}/BERT-pair/test_NLI_M.csv", header=0, sep="\t").values.tolist()
     for row in data:
         original_sentences.append(row[1])
         auxiliary_sentences.append(row[2])
@@ -16,13 +16,61 @@ def get_dataset(path):
     return original_sentences, auxiliary_sentences, labels
 
 
-def get_predictions(path):
+def get_predictions(predictions_dir, task, dataset_type):
     predicted_labels = []
     scores = []
-    data = pd.read_csv(path, header=None).values.tolist()
-    for row in data:
-        predicted_labels.append(int(row[0]))
-        scores.append([float(el) for el in row[1:]])
+    if task.endswith("M"):
+        data = pd.read_csv(f"{predictions_dir}/{dataset_type}/BERT-pair/{task}.csv", header=0).values.tolist()
+        for row in data:
+            predicted_labels.append(int(row[0]))
+            scores.append([float(el) for el in row[1:]])
+    else:
+        if dataset_type == "sentihood":
+            if task.endswith("B"):
+                data = pd.read_csv(f"{predictions_dir}/{dataset_type}/BERT-pair/{task}.csv", header=0).values.tolist()
+                count_aspect_rows = 0
+                for row in data:
+                    current_aspect_scores = [row[2]]
+                    count_aspect_rows += 1
+                    if count_aspect_rows % 3 == 0:
+                        sum_current_aspect_scores = np.sum(current_aspect_scores)
+                        current_aspect_scores = [score / sum_current_aspect_scores for score in current_aspect_scores]
+                        scores.append(current_aspect_scores)
+                        predicted_labels.append(np.argmax(current_aspect_scores))
+            elif task == "single":
+                sentihood_locations = ["location_1", "location_2"]
+                sentihood_aspects = ["general", "price", "safety", "transit location"]
+                data = {}
+                for location in sentihood_locations:
+                    data[location] = {}
+                    for aspect in sentihood_aspects:
+                        data[location][aspect] = pd.read_csv(f"{predictions_dir}/{dataset_type}/BERT-single/{location}_{aspect}.csv", header=0).values.tolist()
+                for location in sentihood_locations:
+                    for i in range(len(data[location][sentihood_aspects[0]])):
+                        for aspect in sentihood_aspects:
+                            scores.append(data[location][aspect][i][1:])
+                            predicted_labels.append(int(data[location][aspect][i][0]))
+        elif dataset_type == "semeval2014":
+            if task.endswith("B"):
+                data = pd.read_csv(f"{predictions_dir}/{dataset_type}/BERT-pair/{task}.csv", header=0).values.tolist()
+                count_aspect_rows = 0
+                for row in data:
+                    current_aspect_scores = [row[2]]
+                    count_aspect_rows += 1
+                    if count_aspect_rows % 5 == 0:
+                        sum_current_aspect_scores = np.sum(current_aspect_scores)
+                        current_aspect_scores = [score / sum_current_aspect_scores for score in current_aspect_scores]
+                        scores.append(current_aspect_scores)
+                        predicted_labels.append(np.argmax(current_aspect_scores))
+            elif task == "single":
+                semeval_aspects = ["ambience", "anecdotes", "food", "price", "service"]
+                data = {}
+                for aspect in semeval_aspects:
+                    data[aspect] = pd.read_csv(f"{predictions_dir}/{dataset_type}/BERT-single/{aspect}.csv", header=0).values.tolist()
+                for i in range(len(data[semeval_aspects[0]])):
+                    for aspect in semeval_aspects:
+                        scores.append(data[aspect][i][1:])
+                        predicted_labels.append(int(data[aspect][i][0]))
     return predicted_labels, scores
 
 
@@ -190,12 +238,11 @@ def compute_semeval_accuracy(test_labels, predicted_labels, scores, num_classes=
     return semeval_accuracy
 
 
-def main(task="NLI_M", dataset_type="sentihood", test_dataset_path="", predictions_path=""):
-    predicted_labels, scores = get_predictions(predictions_path)
+def main(task="NLI_M", dataset_type="sentihood", data_dir="", predictions_path=""):
+    predicted_labels, scores = get_predictions(predictions_path, task, dataset_type)
+    test_original_sentences, test_auxiliary_sentences, test_labels = get_dataset(data_dir, dataset_type)
 
     if dataset_type == "sentihood":
-        test_original_sentences, test_auxiliary_sentences, test_labels = get_dataset(test_dataset_path)
-
         sentihood_aspect_strict_acc = compute_sentihood_aspect_strict_accuracy(test_labels, predicted_labels)
         print(f"{task} Sentihood aspect strict accuracy: {sentihood_aspect_strict_acc}")
         sentihood_aspect_macro_F1 = compute_sentihood_aspect_macro_F1(test_labels, predicted_labels)
@@ -209,8 +256,6 @@ def main(task="NLI_M", dataset_type="sentihood", test_dataset_path="", predictio
         print(f"{task} Sentihood sentiment macro AUC: {sentihood_sentiment_macro_AUC}")
 
     elif dataset_type == "semeval2014":
-        test_original_sentences, test_auxiliary_sentences, test_labels = get_dataset(test_dataset_path)
-
         semeval_aspect_precision, semeval_aspect_recall, semeval_aspect_micro_F1 = compute_semeval_PRF(test_labels,
                                                                                                        predicted_labels)
         print(f"{task} Semeval aspect precision: {semeval_aspect_precision}")
@@ -239,8 +284,8 @@ if __name__ == '__main__':
                         required=True,
                         choices=["sentihood", "semeval2014"],
                         help="Dataset for the task")
-    parser.add_argument("--test_dataset_path",
-                        default="data/sentihood/BERT-pair/test_NLI_M.csv",
+    parser.add_argument("--data_dir",
+                        default="data/",
                         type=str,
                         required=True,
                         help="Test dataset_type (csv format)")
@@ -248,13 +293,13 @@ if __name__ == '__main__':
                         default="results/sentihood_NLI_M.csv",
                         type=str,
                         required=True,
-                        help="Predictions and scores path")
+                        help="Predictions and scores predictions_dir")
     args = parser.parse_args()
 
     task = args.task
     dataset_type = args.dataset_type
-    test_dataset_path = args.test_dataset_path
+    data_dir = args.data_dir
     predictions_path = args.predictions_path
 
-    main(task, dataset_type, test_dataset_path, predictions_path)
+    main(task, dataset_type, data_dir, predictions_path)
 
