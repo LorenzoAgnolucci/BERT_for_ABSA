@@ -63,7 +63,7 @@ def get_predictions(predictions_dir, task, dataset_type):
                         scores.append(current_aspect_scores)
                         predicted_labels.append(np.argmax(current_aspect_scores))
             elif task == "single":
-                semeval_aspects = ["ambience", "anecdotes", "food", "price", "service"]
+                semeval_aspects = ["price", "anecdotes", "food", "ambience", "service"]
                 data = {}
                 for aspect in semeval_aspects:
                     data[aspect] = pd.read_csv(f"{predictions_dir}/{dataset_type}/BERT-single/{aspect}.csv", header=0).values.tolist()
