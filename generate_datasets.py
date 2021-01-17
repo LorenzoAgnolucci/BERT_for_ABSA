@@ -150,6 +150,7 @@ def generate_sentihood_single(data, output_path, set):
                     output[location][aspect].append([id, original_sentence, aspect, sentihood_label2id[label], label])
     for location in sentihood_locations:
         for aspect in sentihood_aspects:
+            output[location][aspect][1:] = sorted(output[location][aspect][1:], key=lambda el: el[0])
             df = pd.DataFrame(output[location][aspect])
             df.to_csv(f"{output_path}/location_{location[-1]}_{aspect}/{set}.csv", sep='\t', index=False, header=False)
 
@@ -185,6 +186,7 @@ def generate_semeval_QA_M(root, output_path):
                 if opinion.attrib["category"] == aspect:
                     label = opinion.attrib["polarity"]
             output.append([id, original_sentence, auxiliary_sentence, semeval_label2id[label], label])
+    output[1:] = sorted(output[1:], key=lambda el: el[0])
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)
 
@@ -201,6 +203,7 @@ def generate_semeval_NLI_M(root, output_path):
                 if opinion.attrib["category"] == aspect:
                     label = opinion.attrib["polarity"]
             output.append([id, original_sentence, auxiliary_sentence, semeval_label2id[label], label])
+    output[1:] = sorted(output[1:], key=lambda el: el[0])
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)
 
@@ -225,6 +228,7 @@ def generate_semeval_QA_B(root, output_path):
                     label = 1
                 current_output.append([id, original_sentence, auxiliary_sentence, label])
             output.extend(current_output)
+    output[1:] = sorted(output[1:], key=lambda el: el[0])
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)
 
@@ -249,6 +253,7 @@ def generate_semeval_NLI_B(root, output_path):
                     label = 1
                 current_output.append([id, original_sentence, auxiliary_sentence, label])
             output.extend(current_output)
+    output[1:] = sorted(output[1:], key=lambda el: el[0])
     df = pd.DataFrame(output)
     df.to_csv(output_path, sep='\t', index=False, header=False)
 
@@ -267,6 +272,7 @@ def generate_semeval_single(root, output_path, set):
                     label = opinion.attrib["polarity"]
             output[aspect].append([id, original_sentence, aspect, semeval_label2id[label], label])
     for aspect in semeval_aspects:
+        output[aspect][1:] = sorted(output[aspect][1:], key=lambda el: el[0])
         df = pd.DataFrame(output[aspect])
         df.to_csv(f"{output_path}/{aspect}/{set}.csv", sep='\t', index=False, header=False)
 
