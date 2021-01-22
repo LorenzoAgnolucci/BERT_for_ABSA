@@ -29,14 +29,16 @@ def get_predictions(predictions_dir, task, dataset_type):
             if task.endswith("B"):
                 data = pd.read_csv(f"{predictions_dir}/{dataset_type}/BERT-pair/{task}.csv", header=0).values.tolist()
                 count_aspect_rows = 0
+                current_aspect_scores = []
                 for row in data:
-                    current_aspect_scores = [row[2]]
+                    current_aspect_scores.append(row[2])
                     count_aspect_rows += 1
                     if count_aspect_rows % 3 == 0:
                         sum_current_aspect_scores = np.sum(current_aspect_scores)
                         current_aspect_scores = [score / sum_current_aspect_scores for score in current_aspect_scores]
                         scores.append(current_aspect_scores)
                         predicted_labels.append(np.argmax(current_aspect_scores))
+                        current_aspect_scores = []
             elif task == "single":
                 sentihood_locations = ["location_1", "location_2"]
                 sentihood_aspects = ["general", "price", "safety", "transit location"]
@@ -54,14 +56,16 @@ def get_predictions(predictions_dir, task, dataset_type):
             if task.endswith("B"):
                 data = pd.read_csv(f"{predictions_dir}/{dataset_type}/BERT-pair/{task}.csv", header=0).values.tolist()
                 count_aspect_rows = 0
+                current_aspect_scores = []
                 for row in data:
-                    current_aspect_scores = [row[2]]
+                    current_aspect_scores.append(row[2])
                     count_aspect_rows += 1
                     if count_aspect_rows % 5 == 0:
                         sum_current_aspect_scores = np.sum(current_aspect_scores)
                         current_aspect_scores = [score / sum_current_aspect_scores for score in current_aspect_scores]
                         scores.append(current_aspect_scores)
                         predicted_labels.append(np.argmax(current_aspect_scores))
+                        current_aspect_scores = []
             elif task == "single":
                 semeval_aspects = ["price", "anecdotes", "food", "ambience", "service"]
                 data = {}
