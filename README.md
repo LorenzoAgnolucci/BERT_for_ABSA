@@ -11,11 +11,11 @@
 * [Acknowledgments](#acknowledgments)
 
 ## About The Project
-Replication of the methodology proposed in the paper [Utilizing BERT for Aspect-Based Sentiment Analysis via Constructing Auxiliary Sentence](https://arxiv.org/abs/1903.09588)
+Replication of the methodology proposed in the paper [Utilizing BERT for Aspect-Based Sentiment Analysis via Constructing Auxiliary Sentence](https://arxiv.org/abs/1903.09588).
 
 In this work (Targeted) Aspect-Based Sentiment Analysis task is converted to a sentence-pair classification task and a pre-trained [BERT](https://arxiv.org/abs/1810.04805) model is fine-tuned on it. 
 
-More details about the project in the [presentation](presentation.pdf)
+More details about the project in the [presentation](presentation.pdf).
 
 ### Built With
 
@@ -35,11 +35,11 @@ git clone https://github.com/LorenzoAgnolucci/BERT_for_ABSA.git
 
 ## Usage
 
-1. Run ```generate_datasets.py``` to build the datasets corresponding to each model or simply use the ones provided in ```data/sentihood/``` and ```data/semeval2014/```.
+1. Run ```generate_datasets.py``` to build the datasets corresponding to each model or simply use the ones provided in ```data/sentihood/``` and ```data/semeval2014/```
 
-2. Use the forms in ```BERT_for_ABSA.ipynb``` to choose the desired dataset type and task both for BERT-single and BERT-pair. Then fine-tune the model and evaluate it runnning the corresponding cells.
+2. Use the forms in ```BERT_for_ABSA.ipynb``` to choose the desired dataset type and task both for BERT-single and BERT-pair. Then fine-tune the model and evaluate it runnning the corresponding cells
 
-3. Run the subsequent cells in ```BERT_for_ABSA.ipynb``` to fine-tune and evalaute the model.
+3. Run the subsequent cells in ```BERT_for_ABSA.ipynb``` to fine-tune and evalaute the model
 
 ## Authors
 
