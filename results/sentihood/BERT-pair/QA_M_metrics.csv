@@ -1,0 +1,10 @@
+eval_loss,0.24318718910217285
+eval_strict_acc,0.7988291644491751
+eval_F1,0.8681476947191475
+eval_aspect_AUC,0.9725493515115848
+eval_sentiment_acc,0.9358552631578947
+eval_sentiment_AUC,0.9677378096794367
+eval_combined_loss,0.020237921650624546
+eval_runtime,56.6578
+eval_samples_per_second,132.656
+epoch,4.0

@@ -1,0 +1,5 @@
+aspect_strict_accuracy, 0.7323044172432145
+aspect_macro_F1, 0.8090926946994309
+aspect_macro_AUC, 0.9557809553676138
+sentiment_accuracy, 0.8601973684210527
+sentiment_macro_AUC, 0.8841116505954074
